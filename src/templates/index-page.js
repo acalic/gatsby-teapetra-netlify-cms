@@ -6,6 +6,28 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
+import ImageGallery from 'react-image-gallery';
+import './index-page.scss';
+
+import header1 from "../img/header-1.jpg"
+import header2 from "../img/header-2.jpg"
+import header3 from "../img/header-3.jpg"
+
+const images = [
+  {
+    original: header1,
+    thumbnail: '',
+  },
+  {
+    original: header2,
+    thumbnail: ''
+  },
+  {
+    original: header3,
+    thumbnail: ''
+  }
+]
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -16,7 +38,7 @@ export const IndexPageTemplate = ({
   intro,
 }) => (
   <div>
-    <div
+    {/* <div
       className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
@@ -63,6 +85,15 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
       </div>
+    </div> */}
+    <div className="header-carousel margin-top-0">
+      <ImageGallery
+        items={images}
+        showThumbnails={false}
+        showPlayButton={false}
+        showFullscreenButton={false}
+        useBrowserFullscreen={false}
+      />
     </div>
     <section className="section section--gradient">
       <div className="container">
@@ -130,7 +161,7 @@ const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
-    <Layout>
+    <Layout textColorWhite>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

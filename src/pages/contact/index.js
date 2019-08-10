@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import Header from '../../components/Header'
 
 function encode(data) {
   return Object.keys(data)
@@ -36,6 +37,10 @@ export default class Index extends React.Component {
   render() {
     return (
       <Layout>
+        {/* <Header
+          title={'Contact'}
+          backgroundImgUrl={'/img/blog-index.jpg'}>
+        </Header> */}
         <section className="section">
           <div className="container">
             <div className="content">
