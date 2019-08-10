@@ -29,6 +29,7 @@ const images = [
 ]
 
 export const IndexPageTemplate = ({
+  textColorWhite,
   image,
   title,
   heading,
@@ -159,9 +160,8 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
   return (
-    <Layout textColorWhite>
+    <Layout isHome>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

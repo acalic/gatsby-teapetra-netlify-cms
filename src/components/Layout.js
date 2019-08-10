@@ -5,8 +5,9 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
-const TemplateWrapper = ({ children, props }) => {
+const TemplateWrapper = ({ children, isHome }) => {
   const { title, description } = useSiteMetadata()
+
   return (
     <div>
       <Helmet>
@@ -44,7 +45,7 @@ const TemplateWrapper = ({ children, props }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar {...props}/>
+      <Navbar isHome={isHome}/>
         <div>{children}</div>
       <Footer />
     </div>

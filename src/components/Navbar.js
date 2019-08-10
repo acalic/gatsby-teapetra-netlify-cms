@@ -35,10 +35,11 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className={"navbar " + (this.props.isHome && 'is-home')}
         role="navigation"
         aria-label="main-navigation"
       >
+        {this.state.navBarActiveClass}
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
@@ -60,7 +61,7 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div 
-              className={"navbar-start has-text-centered " + (this.props.textColorWhite ? 'has-text-white' : 'has-text-black')}
+              className={"navbar-start has-text-centered "}
             >
               <Link className="navbar-item" to="/">
                 Home
