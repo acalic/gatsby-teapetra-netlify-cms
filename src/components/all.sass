@@ -6,13 +6,21 @@ $primary-invert: #fff
 $body-color: #333
 $black: #2b2523
 
+$navbar-item: #000 !default
+
+@mixin transition($transition...) 
+  -moz-transition:    $transition
+  -o-transition:      $transition
+  -webkit-transition: $transition
+  transition:         $transition
+
 hr
   background-color: $primary !important
   margin: 1rem !important
 
 .is-home
   position: absolute !important
-  .navbar-item
+  a.navbar-item
     color: #fff
 
 .navbar
@@ -21,7 +29,7 @@ hr
 
   .navbar-brand
     margin-left: 0 !important
-      
+
   @media screen and (min-width: 768px)
     //position: absolute !important
 
@@ -29,12 +37,29 @@ hr
       flex-direction: column !important
       align-items: center !important
 
-    .navbar-item
-      flex: 1 1 0;
-      //color: #fff !important
+    a.navbar-item
+      flex: 1 1 0
       display: flex
       min-width: 95px
       justify-content: center
+      border-bottom: 2px solid transparent
+      margin: 0 10px
+      font-size: 1.25em
+
+      @include transition(all 0.3s)
+
+      &:hover
+        color: $primary
+        background: none
+
+      &:active,
+      &:focus
+        color: $primary
+        background: none
+        
+      &.active
+        color: $primary
+        border-bottom-color: $primary
 
 .navbar .navbar-menu
   box-shadow: none !important
@@ -42,7 +67,7 @@ hr
   margin-right: 0 !important
 
 .navbar-item .logo
-  max-width: 190px
+  max-width: 270px
   max-height: none !important
 
 .full-width-image-container
@@ -167,7 +192,6 @@ $menu-label-color: $white-ter
 
 
 @import "~bulma"
-
 
 // responsiveness
 +tablet-only

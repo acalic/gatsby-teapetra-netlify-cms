@@ -39,7 +39,6 @@ const Navbar = class extends React.Component {
         role="navigation"
         aria-label="main-navigation"
       >
-        {this.state.navBarActiveClass}
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
@@ -66,16 +65,16 @@ const Navbar = class extends React.Component {
               <Link className="navbar-item" to="/">
                 Home
               </Link>
-              <Link className="navbar-item" to="/bio">
+              <Link className="navbar-item" to="/bio" activeClassName="active">
                 Bio
               </Link>
-              <Link className="navbar-item" to="/portfolio">
+              <Link className="navbar-item" to="/portfolio" activeClassName="active">
                 Portfolio
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/blog" activeClassName="active">
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/contact" activeClassName="active">
                 Contact
               </Link>
               {/* <Link className="navbar-item" to="/contact/examples">
