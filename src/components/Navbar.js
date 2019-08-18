@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 //import logo from '../img/logo.svg'
 import logo from '../img/logo-teapetra.png'
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -62,21 +63,21 @@ const Navbar = class extends React.Component {
             <div 
               className={"navbar-start has-text-centered "}
             >
-              <Link className="navbar-item" to="/">
+              <AniLink duration={0.4} fade className="navbar-item" to="/">
                 Home
-              </Link>
-              <Link className="navbar-item" to="/bio" activeClassName="active">
+              </AniLink>
+              <AniLink fade duration={0.4} className="navbar-item" to="/bio" activeClassName="active">
                 Bio
-              </Link>
-              <Link className="navbar-item" to="/portfolio" activeClassName="active">
+              </AniLink>
+              <AniLink fade duration={0.4} className="navbar-item" to="/portfolio" activeClassName="active">
                 Portfolio
-              </Link>
-              <Link className="navbar-item" to="/blog" activeClassName="active">
+              </AniLink>
+              <AniLink fade duration={0.4} className="navbar-item" to="/blog" activeClassName="active">
                 Blog
-              </Link>
-              <Link className="navbar-item" to="/contact" activeClassName="active">
+              </AniLink>
+              <AniLink fade duration={0.4} className="navbar-item" to="/contact" activeClassName="active">
                 Contact
-              </Link>
+              </AniLink>
               {/* <Link className="navbar-item" to="/contact/examples">
                 Form Examples
               </Link> */}

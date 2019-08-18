@@ -14,6 +14,9 @@ $navbar-item: #000 !default
   -webkit-transition: $transition
   transition:         $transition
 
+button.is-link
+  background: $primary !important
+
 hr
   background-color: $primary !important
   margin: 1rem !important
@@ -190,6 +193,44 @@ $menu-label-color: $white-ter
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
 
+.blog
+  .column
+    text-align: center;
+
+  .image-wrap
+    display: block;
+    position: relative;
+
+    .gatsby-image-wrapper
+      border-radius: 0
+
+  .image-wrap .overlay
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 0;
+    transition: opacity .3s ease;
+    background-color: #000;
+    display: flex
+    align-items: center
+    justify-content: center
+    text-transform: uppercase
+    font-size: 1em
+    padding: 2em
+
+  .image-wrap:hover .overlay
+    opacity: 0.8;
+
+  .menu-image
+    position: absolute;
+    left: 0;
+    top: 0;
+    //width: 100%;
+    //height: 100%;
 
 @import "~bulma"
 
