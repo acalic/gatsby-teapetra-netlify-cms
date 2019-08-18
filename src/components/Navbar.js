@@ -66,8 +66,8 @@ const Navbar = class extends React.Component {
               <AniLink duration={0.4} fade className="navbar-item" to="/">
                 Home
               </AniLink>
-              <AniLink fade duration={0.4} className="navbar-item" to="/bio" activeClassName="active">
-                Bio
+              <AniLink fade duration={0.4} className="navbar-item" to="/about" activeClassName="active">
+                About
               </AniLink>
               <AniLink fade duration={0.4} className="navbar-item" to="/portfolio" activeClassName="active">
                 Portfolio
