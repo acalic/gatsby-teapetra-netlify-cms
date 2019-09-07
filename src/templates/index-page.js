@@ -9,9 +9,9 @@ import BlogRoll from '../components/BlogRoll'
 import ImageGallery from 'react-image-gallery';
 import './index-page.scss';
 
-import header1 from "../img/header-1.jpg"
-import header2 from "../img/header-2.jpg"
-import header3 from "../img/header-3.jpg"
+// import header1 from "../img/header-1.jpg"
+// import header2 from "../img/header-2.jpg"
+// import header3 from "../img/header-3.jpg"
 
 const images = [
   {
@@ -37,6 +37,7 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
+  mainCarousel
 }) => (
   <div>
     {/* <div
@@ -89,7 +90,7 @@ export const IndexPageTemplate = ({
     </div> */}
     <div className="header-carousel margin-top-0">
       <ImageGallery
-        items={images}
+        items={[mainCarousel.image1, mainCarousel.image2, mainCarousel.image3]}
         showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={false}
@@ -104,28 +105,28 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h1 className="title">{title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h3 className="subtitle">{description}</h3>
                   </div>
                 </div>
-                <div className="columns">
+                {/* <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
                     <p>{description}</p>
                   </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
+                </div> */}
+                {/* <Features gridItems={intro.blurbs} /> */}
+                {/* <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories

@@ -5,6 +5,10 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 
+import appleTouchIcon from "../img/apple-touch-icon.png"
+import favicon16 from "../img/favicon-16x16.png"
+import favicon32 from "../img/favicon-32x32.png"
+
 const TemplateWrapper = ({ children, isHome }) => {
   const { title, description } = useSiteMetadata()
 
@@ -18,26 +22,26 @@ const TemplateWrapper = ({ children, isHome }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/img/apple-touch-icon.png"
+          href={appleTouchIcon}
         />
         <link
           rel="icon"
           type="image/png"
-          href="/img/favicon-32x32.png"
+          href={favicon32}
           sizes="32x32"
         />
         <link
           rel="icon"
           type="image/png"
-          href="/img/favicon-16x16.png"
+          href={favicon16}
           sizes="16x16"
         />
 
-        <link
+        {/* <link
           rel="mask-icon"
           href="/img/safari-pinned-tab.svg"
           color="#ff4400"
-        />
+        /> */}
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
