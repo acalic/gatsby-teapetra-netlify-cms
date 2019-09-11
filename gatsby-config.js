@@ -71,7 +71,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-exclude',
       options: { paths: ['/products/'] },
-    }
+    },
     {
       resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
       options: {
