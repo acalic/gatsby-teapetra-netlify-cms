@@ -6,6 +6,15 @@ description: >-
   recording light or other electromagnetic radiation, either electronically by
   means of an image sensor, or chemically by means of a light-sensitive material
   such as photographic film.
-image: /img/home-jumbotron.jpg
+mainCarousel:
+  image1:
+    alt: This is the description of the image
+    image: /img/header-1.jpg
+  image2:
+    alt: This is the description of the image
+    image: /img/header-2.jpg
+  image3:
+    alt: This is the description of the image
+    image: /img/header-3.jpg
 ---
 

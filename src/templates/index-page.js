@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+//import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 import ImageGallery from 'react-image-gallery';
@@ -13,20 +13,20 @@ import './index-page.scss';
 // import header2 from "../img/header-2.jpg"
 // import header3 from "../img/header-3.jpg"
 
-const images = [
-  {
-    original: header1,
-    thumbnail: '',
-  },
-  {
-    original: header2,
-    thumbnail: ''
-  },
-  {
-    original: header3,
-    thumbnail: ''
-  }
-]
+// const images = [
+//   {
+//     original: header1,
+//     thumbnail: '',
+//   },
+//   {
+//     original: header2,
+//     thumbnail: ''
+//   },
+//   {
+//     original: header3,
+//     thumbnail: ''
+//   }
+// ]
 
 export const IndexPageTemplate = ({
   textColorWhite,
@@ -148,14 +148,12 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
   description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  mainCarousel: PropTypes.shape({
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 }
 
@@ -164,13 +162,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout isHome>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
-        intro={frontmatter.intro}
+        mainCarousel={frontmatter.mainCarousel}
       />
     </Layout>
   )
@@ -179,7 +173,7 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+      frontmatter: PropTypes.object
     }),
   }),
 }
@@ -191,22 +185,10 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        heading
-        subheading
-        mainpitch {
-          title
-          description
-        }
         description
-        intro {
-          blurbs {
+        mainCarousel {
+          image1 {
+            alt
             image {
               childImageSharp {
                 fluid(maxWidth: 240, quality: 64) {
@@ -214,10 +196,27 @@ export const pageQuery = graphql`
                 }
               }
             }
-            text
           }
-          heading
-          description
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     }
