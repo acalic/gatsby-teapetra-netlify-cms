@@ -37,7 +37,8 @@ export const IndexPageTemplate = ({
   mainpitch,
   description,
   intro,
-  mainCarousel
+  mainCarousel,
+  mainCarouselFormated
 }) => (
   <div>
     {/* <div
@@ -90,7 +91,7 @@ export const IndexPageTemplate = ({
     </div> */}
     <div className="header-carousel margin-top-0">
       <ImageGallery
-        items={[mainCarousel.image1, mainCarousel.image2, mainCarousel.image3]}
+        items={mainCarouselFormated}
         showThumbnails={false}
         showPlayButton={false}
         showFullscreenButton={false}
@@ -159,12 +160,31 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+
+  console.log(frontmatter.mainCarousel);
+
+  const images = [
+    {
+      original: frontmatter.mainCarousel.image1.childImageSharp.fluid.src,
+      thumbnail: '',
+    },
+    {
+      original: frontmatter.mainCarousel.image2.childImageSharp.fluid.src,
+      thumbnail: ''
+    },
+    {
+      original: frontmatter.mainCarousel.image3.childImageSharp.fluid.src,
+      thumbnail: ''
+    }
+  ]
+
   return (
     <Layout isHome>
       <IndexPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
         mainCarousel={frontmatter.mainCarousel}
+        mainCarouselFormated={images}
       />
     </Layout>
   )
@@ -188,32 +208,23 @@ export const pageQuery = graphql`
         description
         mainCarousel {
           image1 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
           image2 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
           image3 {
-            alt
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
               }
             }
           }

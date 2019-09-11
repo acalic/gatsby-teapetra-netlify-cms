@@ -7,14 +7,8 @@ description: >-
   means of an image sensor, or chemically by means of a light-sensitive material
   such as photographic film.
 mainCarousel:
-  image1:
-    alt: This is the description of the image
-    image: /img/header-1.jpg
-  image2:
-    alt: This is the description of the image
-    image: /img/header-2.jpg
-  image3:
-    alt: This is the description of the image
-    image: /img/header-3.jpg
+  image1: /img/header-1.jpg
+  image2: /img/header-2.jpg
+  image3: /img/header-3.jpg
 ---
 
