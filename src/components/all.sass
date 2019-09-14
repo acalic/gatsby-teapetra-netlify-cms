@@ -49,29 +49,34 @@ hr
       margin: 0 10px
       font-size: 1.25em
 
-      @include transition(all 0.3s)
-
-      &:hover
-        color: $primary
-        background: none
-
-      &:active,
-      &:focus
-        color: $primary
-        background: none
-        
-      &.active
-        color: $primary
-        border-bottom-color: $primary
-
 .navbar .navbar-menu
   box-shadow: none !important
   text-transform: uppercase
   margin-right: 0 !important
 
-.navbar-item .logo
-  max-width: 270px
-  max-height: none !important
+.navbar-item
+  @include transition(all 0.3s)
+
+  .icon
+    color: $primary
+
+  &:hover
+    color: $primary !important
+    background: none !important
+
+  &:active,
+  &:focus,
+  &:focus-within
+    color: $primary !important
+    background: none !important
+    
+  &.active
+    color: $primary !important
+    border-bottom-color: $primary !important
+
+  .logo
+    max-width: 270px
+    max-height: none !important
 
 .full-width-image-container
   .title
@@ -80,7 +85,7 @@ hr
     //padding: .5rem
 
 .header-carousel
-  height: 100vh
+  // height: 100vh
   // position: absolute;
   // top: 0;
   // left: 0;
@@ -149,8 +154,6 @@ hr
 .margin-top-0
   margin-top: 0 !important
 
-.navbar-item .icon
-  color: $primary
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
   width: 1.5rem
@@ -230,9 +233,9 @@ $menu-label-color: $white-ter
     opacity: 0.8;
 
   .menu-image
-    position: absolute;
-    left: 0;
-    top: 0;
+    position: absolute
+    left: 0
+    top: 0
     //width: 100%;
     //height: 100%;
 
@@ -241,12 +244,47 @@ $menu-label-color: $white-ter
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
+  .navbar-item .logo
+    position: relative
+    left: 52px
+    margin-left: 3rem
+  .navbar-burger
+    margin: 3rem
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
+  .navbar-item .logo
+    max-width: 130px !important
+    max-height: 52px !important
+  .navbar-brand
+    display: flex
+    align-items: center
+    margin-right: 0.5rem
+
+@media screen and (max-width: 1023px)
+  .section 
+    padding: 0.5rem 1.5rem
+  
+  .navbar-menu
+    background-color: transparent
+      
+  .navbar a.navbar-item.active
+    max-width: 120px !important
+    margin: 0 auto
+    
+  .is-home
+    position: relative !important
+
+    .navbar-burger
+    border-radius: 4px
+
+    .navbar-item
+        color: #4a4a4a !important
+
+  
