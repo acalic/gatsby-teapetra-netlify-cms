@@ -82,11 +82,15 @@ hr
     max-height: none !important
 
 .dropdown
-  .dropdown-content
-    @include transition(all 0.3s)
-
+  .dropdown-menu
+    display: block
     height: 0
     opacity: 0
+    
+    @include transition(all 0.3s)
+
+  .dropdown-content
+    display: none
     background: rgba(255,255,255, 0.9)
 
     .dropdown-item
@@ -96,9 +100,12 @@ hr
         color: $primary
 
   &:hover
-    .dropdown-content
+    .dropdown-menu
       height: 100%
       opacity: 1
+
+    .dropdown-content
+      display: block
 
 .navbar.is-home
   .dropdown-content
