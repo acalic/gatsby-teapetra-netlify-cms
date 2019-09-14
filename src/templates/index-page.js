@@ -161,7 +161,7 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
-  console.log(frontmatter.mainCarousel);
+  //console.log(frontmatter.mainCarousel);
 
   const images = [
     {

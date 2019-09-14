@@ -50,6 +50,8 @@ hr
       font-size: 1.25em
 
 .navbar .navbar-menu
+  @include transition(all 0.3s)
+
   box-shadow: none !important
   text-transform: uppercase
   margin-right: 0 !important
@@ -64,6 +66,7 @@ hr
     color: $primary !important
     background: none !important
 
+  &.is-active,
   &:active,
   &:focus,
   &:focus-within
@@ -77,6 +80,29 @@ hr
   .logo
     max-width: 270px
     max-height: none !important
+
+.dropdown
+  .dropdown-content
+    @include transition(all 0.3s)
+
+    height: 0
+    opacity: 0
+    background: rgba(255,255,255, 0.9)
+
+    .dropdown-item
+      @include transition(all 0.3s)
+
+      &:hover
+        color: $primary
+
+  &:hover
+    .dropdown-content
+      height: 100%
+      opacity: 1
+
+.navbar.is-home
+  .dropdown-content
+    box-shadow: none
 
 .full-width-image-container
   .title
@@ -273,6 +299,13 @@ $menu-label-color: $white-ter
   
   .navbar-menu
     background-color: transparent
+    display: block
+    height: 0
+    opacity: 0
+
+    &.is-active
+      height: 100%
+      opacity: 1
       
   .navbar a.navbar-item.active
     max-width: 120px !important
@@ -287,4 +320,3 @@ $menu-label-color: $white-ter
     .navbar-item
         color: #4a4a4a !important
 
-  

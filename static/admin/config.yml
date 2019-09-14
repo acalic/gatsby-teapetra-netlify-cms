@@ -72,7 +72,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-post"}
       - {label: "Title", name: "title", widget: "string"}
       # -{label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -90,7 +90,7 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-post"}
       - {label: "Title", name: "title", widget: "string"}
       # -{label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
@@ -104,16 +104,16 @@ collections:
 
   - name: "lifestyle"
     label: "Lifestyle | photo album"
-    folder: "src/pages/portfolio/elopement"
+    folder: "src/pages/portfolio/lifestyle"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "portfolio-post"}
       - {label: "Title", name: "title", widget: "string"}
       # -{label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Featured Image (Thumbnail)", name: "featuredimage", widget: image}
-      # - {label: "Tags", name: "tags", widget: "list"}
+      - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
           field: {label: "Images", name: "images", widget: "list", field:
             {label: Image, name: image, widget: image}
