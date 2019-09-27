@@ -1,9 +1,11 @@
 import React from "react"
-import Layout from '../../components/Layout'
-//import Header from '../../components/Header'
-import './styles.scss';
 
-export default class Portfolio extends React.Component {
+import Layout from '../../components/Layout'
+import PortfolioRoll from '../../components/PortfolioRoll'
+
+//import './styles.scss';
+
+export default class PortfolioIndexPage extends React.Component {
     render() {
       return (
         <Layout>
@@ -13,7 +15,9 @@ export default class Portfolio extends React.Component {
           </Header> */}
           <section className="section">
             <div className="container">
-              <div className="content"></div>
+              <div className="content">
+                <PortfolioRoll />
+              </div>
             </div>
           </section>
         </Layout>

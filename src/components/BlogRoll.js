@@ -9,6 +9,8 @@ class BlogRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
+    console.log("edges:"+JSON.stringify(posts[0].node.frontmatter));
+
     return (
       <div className="blog columns is-multiline">
         {posts &&
