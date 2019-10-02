@@ -9,8 +9,8 @@ class PortfolioRoll extends React.Component {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
 
-    console.log("edges:"+JSON.stringify(posts[0].node));
-    console.log(posts)
+    //console.log("edges:"+JSON.stringify(posts[0].node));
+    //console.log(posts)
 
     return (
       <div className="blog columns is-multiline">
@@ -68,7 +68,7 @@ export default () => (
                 templateKey
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 432, quality: 100) {
+                    fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }

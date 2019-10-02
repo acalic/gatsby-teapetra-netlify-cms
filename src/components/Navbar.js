@@ -72,7 +72,7 @@ const Navbar = class extends React.Component {
               {/* <AniLink fade duration={0.4} className="navbar-item" to="/portfolio" activeClassName="active">
                 Portfolio
               </AniLink> */}
-              <a className="navbar-item dropdown">
+              <div className="navbar-item dropdown">
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu">
                     <span>Portfolio</span>
@@ -97,7 +97,7 @@ const Navbar = class extends React.Component {
                     </AniLink>
                   </ul>
                 </div>
-              </a>
+              </div>
               <AniLink fade duration={0.4} className="navbar-item" to="/blog" activeClassName="active">
                 Blog
               </AniLink>
