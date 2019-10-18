@@ -8,6 +8,12 @@ $black: #2b2523
 
 $navbar-item: #000 !default
 
+body
+  font-family: 'Raleway', sans-serif !important;
+
+.has-margin-top-3
+  margin-top: 3rem;
+
 @mixin transition($transition...) 
   -moz-transition:    $transition
   -o-transition:      $transition
@@ -236,12 +242,15 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 .blog
+  align-items: center
+  justify-content: center
+  
   .column
-    text-align: center;
+    text-align: center
 
   .image-wrap
-    display: block;
-    position: relative;
+    display: block
+    position: relative
 
   .image-wrap .overlay
     position: absolute;
