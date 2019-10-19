@@ -18,7 +18,7 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <div>
+              <div className="page-about-content">
                 <div className="about-img-container">
                   <PreviewCompatibleImage
                     imageInfo={{
@@ -39,7 +39,6 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string,
-  mainimage: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -75,6 +74,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        mainimage
       }
     }
   }
