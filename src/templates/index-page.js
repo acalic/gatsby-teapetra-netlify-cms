@@ -105,10 +105,8 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
             
-                <div className="tile">
+                <div className="home-header-paragraph">
                   <h1 className="title">{title}</h1>
-                </div>
-                <div className="tile">
                   <p className="subtitle">{description}</p>
                 </div>
                 

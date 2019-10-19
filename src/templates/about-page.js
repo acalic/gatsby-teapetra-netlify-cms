@@ -4,12 +4,13 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 //import Header from '../components/Header'
 import Content, { HTMLContent } from '../components/Content'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, mainimage, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <section className="section section--gradient page-about">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -17,7 +18,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <div>
+                <div className="about-img-container">
+                  <PreviewCompatibleImage
+                    imageInfo={{
+                      image: mainimage,
+                      alt: `tea petra about me image`,
+                    }}
+                  />
+                </div>
+                <PageContent className="content" content={content} />
+              </div>
             </div>
           </div>
         </div>
@@ -28,6 +39,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string,
+  mainimage: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -44,6 +56,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        mainimage={post.frontmatter.mainimage}
         content={post.html}
       />
     </Layout>
