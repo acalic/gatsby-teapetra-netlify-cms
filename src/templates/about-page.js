@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 //import Header from '../components/Header'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export const AboutPageTemplate = ({ title, mainimage, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -19,15 +20,19 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
                 {title}
               </h2>
               <div className="page-about-content">
-                <div className="about-img-container">
-                  <PreviewCompatibleImage
-                    imageInfo={{
-                      image: mainimage,
-                      alt: `tea petra about me image`,
-                    }}
-                  />
-                </div>
-                <PageContent className="content" content={content} />
+                <ScrollAnimation animateIn="slideInLeft">
+                  <div className="about-img-container">
+                    <PreviewCompatibleImage
+                      imageInfo={{
+                        image: mainimage,
+                        alt: `tea petra about me image`,
+                      }}
+                    />
+                  </div>
+                </ScrollAnimation>
+                <ScrollAnimation animateIn="slideInRight">
+                  <PageContent className="content" content={content} />
+                </ScrollAnimation>
               </div>
             </div>
           </div>

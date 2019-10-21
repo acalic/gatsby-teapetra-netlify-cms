@@ -1,4 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
+@import "~animate.css/animate.min.css";
 
 // Config vars
 $primary: #40E0D0
@@ -10,7 +11,7 @@ $black: #2b2523
 $navbar-item: #000 !default
 
 body
-  font-family: 'Raleway', sans-serif !important;
+  font-family: 'Raleway', sans-serif !important
 
 .has-margin-top-3
   margin-top: 3rem;
@@ -127,6 +128,7 @@ hr
 
 .header-carousel
   position: relative
+  min-height: 100vh;
   // height: 100vh
   // position: absolute;
   // top: 0;
@@ -332,6 +334,14 @@ $menu-label-color: $white-ter
     display: flex
     align-items: center
     margin-right: 0.5rem
+
+  .page-about
+    .page-about-content
+      display: block
+
+      .about-img-container
+        margin-right: 0 !important
+        margin-bottom: 2rem
 
 @media screen and (max-width: 1023px)
   .section 

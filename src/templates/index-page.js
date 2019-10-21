@@ -9,6 +9,8 @@ import BlogRoll from '../components/BlogRoll'
 import ImageGallery from 'react-image-gallery';
 import './index-page.scss';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 // import header1 from "../img/header-1.jpg"
 // import header2 from "../img/header-2.jpg"
 // import header3 from "../img/header-3.jpg"
@@ -105,10 +107,12 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
             
-                <div className="home-header-paragraph">
-                  <h1 className="title">{title}</h1>
-                  <p className="subtitle">{description}</p>
-                </div>
+                <ScrollAnimation animateIn="slideInUp">
+                  <div className="home-header-paragraph">
+                    <h1 className="title">{title}</h1>
+                    <p className="subtitle">{description}</p>
+                  </div>
+                </ScrollAnimation >
                 
                 {/* <div className="columns">
                   <div className="column is-12">
@@ -127,17 +131,20 @@ export const IndexPageTemplate = ({
                   </div>
                 </div> */}
 
-                <div className="is-12 has-margin-top-3">
-                  <h1 className="has-text-weight-semibold">
-                    Latest stories
-                  </h1>
-                  <BlogRoll />
-                  <div className="is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
+                <ScrollAnimation animateIn="fadeIn">
+                  <div className="is-12 has-margin-top-3">
+                    <h1 className="has-text-weight-semibold">
+                      Latest stories
+                    </h1>
+                    <BlogRoll />
+                    <div className="is-12 has-text-centered">
+                      <Link className="btn" to="/blog">
+                        Read more
+                      </Link>
+                    </div>
                   </div>
-                </div>
+                </ScrollAnimation >
+
               </div>
             </div>
           </div>
