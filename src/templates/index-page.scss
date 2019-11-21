@@ -27,4 +27,11 @@
             }
         }
     }
+    .image-gallery-left-nav::before {
+        content: url('../img/arrow-left.png');
+    }
+    .image-gallery-right-nav::before {
+        content: url('../img/arrow-left.png');
+        transform: rotate(180deg);
+    }
 }
