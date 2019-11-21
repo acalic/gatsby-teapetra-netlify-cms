@@ -53,7 +53,7 @@ collections:
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Main Image", name: "mainimage", widget: image}
       - file: "src/pages/musica/biography/index.md"
-        label: "Biography"
+        label: "Musica - Biography"
         name: "biography"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
@@ -62,7 +62,7 @@ collections:
           - {label: "Main Image", name: "mainimage", widget: image}
 
       - file: "src/pages/musica/videos/index.md"
-        label: "Videos"
+        label: "Musica - Videos"
         name: "videos"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
@@ -71,8 +71,8 @@ collections:
           - {label: "Main Image", name: "mainimage", widget: image}
 
       - file: "src/pages/musica/prices/index.md"
-        label: "Musica"
-        name: "musica"
+        label: "Musica - Prices"
+        name: "prices"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
           - {label: "Title", name: "title", widget: "string"}
