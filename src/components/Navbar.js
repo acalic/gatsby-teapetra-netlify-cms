@@ -98,6 +98,32 @@ const Navbar = class extends React.Component {
                   </ul>
                 </div>
               </div>
+              <div className="navbar-item dropdown">
+                <div className="dropdown-trigger">
+                  <div aria-haspopup="true" aria-controls="dropdown-menu">
+                    <span>Musica</span>
+                  </div>
+                </div>
+                <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                  <ul className="dropdown-content">
+                    <AniLink fade duration={0.4} to="/musica/biography" activeClassName="active">
+                      <li className="dropdown-item">
+                        Biography
+                      </li>
+                    </AniLink>
+                    <AniLink fade duration={0.4} to="/musica/videos" activeClassName="active">
+                      <li className="dropdown-item">
+                        Videos
+                      </li>
+                    </AniLink>
+                    <AniLink fade duration={0.4} to="/musica/prices" activeClassName="active">
+                      <li href="#" className="dropdown-item">
+                        Prices
+                      </li>
+                    </AniLink>
+                  </ul>
+                </div>
+              </div>
               <AniLink fade duration={0.4} className="navbar-item" to="/blog" activeClassName="active">
                 Blog
               </AniLink>

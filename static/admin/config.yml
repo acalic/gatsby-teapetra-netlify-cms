@@ -52,6 +52,32 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Main Image", name: "mainimage", widget: image}
+      - file: "src/pages/musica/biography/index.md"
+        label: "Biography"
+        name: "biography"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Main Image", name: "mainimage", widget: image}
+
+      - file: "src/pages/musica/videos/index.md"
+        label: "Videos"
+        name: "videos"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Main Image", name: "mainimage", widget: image}
+
+      - file: "src/pages/musica/prices/index.md"
+        label: "Musica"
+        name: "musica"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "musica-page"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Main Image", name: "mainimage", widget: image}
       #- file: "src/pages/products/index.md"
       #  label: "Products Page"
       #  name: "products"

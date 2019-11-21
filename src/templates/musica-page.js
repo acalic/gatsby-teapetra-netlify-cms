@@ -4,14 +4,14 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 //import Header from '../components/Header'
 import Content, { HTMLContent } from '../components/Content'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+//import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-export const AboutPageTemplate = ({ title, mainimage, content, contentComponent }) => {
+export const MusicaPageTemplate = ({ title, mainimage, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient page-about">
+    <section className="section section--gradient page-musica">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -19,18 +19,8 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
               <h1 className="title is-size-3 is-bold-light">
                 {title}
               </h1>
-              <div className="page-about-content">
-                <ScrollAnimation animateIn="slideInLeft">
-                  <div className="about-img-container">
-                    <PreviewCompatibleImage
-                      imageInfo={{
-                        image: mainimage,
-                        alt: `tea petra about me image`,
-                      }}
-                    />
-                  </div>
-                </ScrollAnimation>
-                <ScrollAnimation animateIn="slideInRight">
+              <div className="page-musica-content">
+                <ScrollAnimation animateIn="slideInUp">
                   <PageContent className="content" content={content} />
                 </ScrollAnimation>
               </div>
@@ -42,13 +32,13 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
   )
 }
 
-AboutPageTemplate.propTypes = {
+MusicaPageTemplate.propTypes = {
   title: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
+const MusicaPage = ({ data }) => {
   const { markdownRemark: post } = data
 
   return (
@@ -57,7 +47,7 @@ const AboutPage = ({ data }) => {
         title={'About Me'}
         backgroundImgUrl={'/img/blog-index.jpg'}>
       </Header> */}
-      <AboutPageTemplate
+      <MusicaPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         mainimage={post.frontmatter.mainimage}
@@ -67,25 +57,18 @@ const AboutPage = ({ data }) => {
   )
 }
 
-AboutPage.propTypes = {
+MusicaPage.propTypes = {
   data: PropTypes.object.isRequired,
 }
 
-export default AboutPage
+export default MusicaPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
+export const musicaPageQuery = graphql`
+  query MusicaPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
-        mainimage {
-          childImageSharp {
-            fluid(maxWidth: 600, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
