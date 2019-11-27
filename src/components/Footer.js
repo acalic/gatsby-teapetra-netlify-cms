@@ -16,37 +16,28 @@ const Footer = class extends React.Component {
             <div className="column">
               TeaPetra 2020.
             </div>
-            <div className="column">
+            <div className="column" style={{padding: 0}}>
               croatian/ worldwide/ artist at all
             </div>
-            <div className="column">
+            <div className="column social-icons">
               <a title="instagram" href="https://instagram.com/odettekokeshi">
                 <img
                   src={instagram}
                   alt="Instagram"
-                  style={{ width: '1.3em', height: '1.3em' }}
                 />
               </a>
-            </div>
-            <div className="column">
               <a title="facebook" href="https://facebook.com/">
                 <img
                   src={facebook}
                   alt="Facebook"
-                  style={{ width: '1.3em', height: '1.3em' }}
                 />
               </a>
-            </div>
-            <div className="column">
               <a title="linkedin" href="https://linkedin.com/in/">
                 <img
                   src={linkedin}
                   alt="Linkedin"
-                  style={{ width: '1.3em', height: '1.3em' }}
                 />
               </a>
-            </div>
-            <div className="column">
               <a title="scrolltop" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                 <img
                   src={scrolltop}
