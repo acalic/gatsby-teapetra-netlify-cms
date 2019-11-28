@@ -7,7 +7,7 @@ export default class PortfolioGalleryIndex extends React.Component {
 
     render() {
     
-    let galleryName = this.props.location.pathname.split("\/"); // Splits on a single slash
+    let galleryName = this.props.location.pathname.split("/"); // Splits on a single slash
     galleryName = galleryName[2];
 
       return (

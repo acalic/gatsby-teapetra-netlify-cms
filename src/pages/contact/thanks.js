@@ -3,7 +3,7 @@ import Layout from '../../components/Layout'
 
 export default () => (
   <Layout>
-    <section className="section">
+    <section className="section page-contact-thanks">
       <div className="container">
         <div className="content">
           <h1>Thank you!</h1>

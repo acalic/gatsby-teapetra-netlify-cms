@@ -8,10 +8,10 @@ export const PortfolioGallery = ({ data, props }) => {
 
   //let { edges: posts } = data.allMarkdownRemark
 
-  let filtered = [];
+  //let filtered = [];
   let reduced = data.allMarkdownRemark.edges.reduce(function(filtered, post) {
 
-    let postGallery = post.node.fields.slug.split("\/"); // Splits on a single slash
+    let postGallery = post.node.fields.slug.split("/"); // Splits on a single slash
     postGallery = postGallery[2];
 
     if (postGallery === props.galleryName) {

@@ -142,13 +142,13 @@ export default class Index extends React.Component {
                       WHAT SERVICES ARE YOU INTERESTED IN
                     </label>
                     <div className="control radio-group">
-                      <label class="radio">
-                        <input type="radio" id="services-1" name="services"/>
-                        <label for="services-1">Music</label>
+                      <label className="radio">
+                        <input type="radio" id="services-1" name="services" value="music" checked="checked"/>
+                        <label htmlFor="services-1">Music</label>
                       </label>
-                      <label class="radio">
-                        <input type="radio" id="services-2" name="services"/>
-                        <label for="services-2">Photography</label>
+                      <label className="radio">
+                        <input type="radio" id="services-2" name="services" value="photography"/>
+                        <label htmlFor="services-2">Photography</label>
                       </label>
                     </div>
                   </div>
@@ -189,21 +189,21 @@ export default class Index extends React.Component {
                       YOUR DREAM SYLE:
                     </label>
                     <div className="control radio-group">
-                      <label class="radio">
-                        <input type="radio" id="style-1" name="style"/>
-                        <label for="style-1">Boho</label>
+                      <label className="radio">
+                        <input type="radio" id="style-1" name="style" value="boho"/>
+                        <label htmlFor="style-1">Boho</label>
                       </label>
-                      <label class="radio">
-                        <input type="radio" id="style-2" name="style"/>
-                        <label for="style-2">Classic</label>
+                      <label className="radio">
+                        <input type="radio" id="style-2" name="style" value="classic" checked="checked"/>
+                        <label htmlFor="style-2">Classic</label>
                       </label>
-                      <label class="radio">
-                        <input type="radio" id="style-3" name="style"/>
-                        <label for="style-3">Adventurous</label>
+                      <label className="radio">
+                        <input type="radio" id="style-3" value="adventurous" name="style"/>
+                        <label htmlFor="style-3">Adventurous</label>
                       </label>
-                      <label class="radio">
-                        <input type="radio" id="style-4" name="style"/>
-                        <label for="style-4">Romantic</label>
+                      <label className="radio">
+                        <input type="radio" id="style-4" value="romantic" name="style"/>
+                        <label htmlFor="style-4">Romantic</label>
                       </label>
                     </div>
                   </div>
