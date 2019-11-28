@@ -143,7 +143,7 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group">
                       <label className="radio">
-                        <input type="radio" id="services-1" name="services" value="music" checked="checked"/>
+                        <input type="radio" id="services-1" name="services" value="music" defaultChecked />
                         <label htmlFor="services-1">Music</label>
                       </label>
                       <label className="radio">
@@ -194,7 +194,7 @@ export default class Index extends React.Component {
                         <label htmlFor="style-1">Boho</label>
                       </label>
                       <label className="radio">
-                        <input type="radio" id="style-2" name="style" value="classic" checked="checked"/>
+                        <input type="radio" id="style-2" name="style" value="classic" defaultChecked />
                         <label htmlFor="style-2">Classic</label>
                       </label>
                       <label className="radio">
