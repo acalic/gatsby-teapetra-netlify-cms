@@ -374,11 +374,13 @@ $menu-label-color: $white-ter
       flex: 2
 
 .page-contact
+  margin-top: 3rem
+
   .content
     margin: 0 auto
 
   .field:not(:last-child)
-    margin-bottom: 1.7rem
+    margin-bottom: 3rem
 
     label
       margin-bottom: 0
@@ -391,7 +393,6 @@ $menu-label-color: $white-ter
     padding: 0
     background: transparent
     border-bottom: 1px solid rgba(0,0,0,0.2)
-    font-family: 'Bellefair', serif !important
 
   .radio-group
     margin-top: 0.8rem
@@ -511,6 +512,9 @@ $menu-label-color: $white-ter
 .radio + .radio
   margin-left: 1.5em
 
+label.radio label
+  font-size: 14px
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
@@ -552,6 +556,8 @@ $menu-label-color: $white-ter
       .about-img-container
         margin-right: 0 !important
         margin-bottom: 2rem
+  .page-contact
+    margin-top: 2rem
 
   .header-carousel
     min-height: auto
