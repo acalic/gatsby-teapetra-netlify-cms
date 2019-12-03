@@ -107,6 +107,14 @@ export const IndexPageTemplate = ({
             <div className="content">
 
               <ScrollAnimation animateIn="slideInUp">
+                <div className="landing-headline">
+                  Sweetheart, <br/>
+                  Let's pour <br/>
+                  tangible MAGIC <br/>
+                </div>
+              </ScrollAnimation >
+
+              <ScrollAnimation animateIn="slideInUp">
                 <div className="home-header-paragraph">
                   <h1 className="title">{title}</h1>
                   <p className="subtitle">{description}</p>
@@ -132,9 +140,9 @@ export const IndexPageTemplate = ({
 
               <ScrollAnimation animateIn="fadeIn">
                 <div className="is-12 has-margin-top-3">
-                  <h1 className="has-text-weight-semibold">
+                  <h3 className="has-text-weight-semibold">
                     Latest stories
-                  </h1>
+                  </h3>
                   <BlogRoll />
                   <div className="is-12 has-text-centered">
                     <Link className="btn" to="/blog">
