@@ -38,13 +38,13 @@ const Footer = class extends React.Component {
                   alt="Linkedin"
                 />
               </a>
-              <span title="scrolltop" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
+              {/*<span title="scrolltop" onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
                 <img
                   src={scrolltop}
                   alt="scrolltop"
                   style={{ width: '1.5em', height: '1.5em', padding: "5px", background: "#000", opacity: 0.6, borderRadius: 50 }}
                 />
-              </span>
+              </span>*/}
             </div>
           </div>
         </div>

@@ -9,6 +9,8 @@ import appleTouchIcon from "../img/apple-touch-icon.png"
 import favicon16 from "../img/favicon-16x16.png"
 import favicon32 from "../img/favicon-32x32.png"
 
+import { TinyButton as ScrollUpButton } from "react-scroll-up-button"; //Add this line Here
+
 const TemplateWrapper = ({ children, isHome }) => {
   const { title, description } = useSiteMetadata()
 
@@ -53,6 +55,7 @@ const TemplateWrapper = ({ children, isHome }) => {
       <Navbar isHome={isHome}/>
         <div>{children}</div>
       <Footer />
+      <ScrollUpButton ContainerClassName="btn-scrolltop"/>
     </div>
   )
 }

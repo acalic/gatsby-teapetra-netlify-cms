@@ -21,7 +21,7 @@ label
   font-weight: 500 !important
 
 .has-margin-top-3
-  margin-top: 3rem;
+  margin-top: 3rem
 
 @mixin transition($transition...) 
   -moz-transition:    $transition
@@ -31,6 +31,18 @@ label
 
 button.is-link
   background: $primary !important
+
+.btn-scrolltop
+  border-radius: 4px
+  width: 40px
+  height: 40px
+  display: flex
+  justify-content: center
+  opacity: 0.7 !important
+
+  svg
+    width: 20px
+    fill: rgba(255, 255, 255, 0.85)
 
 hr.separator
   background-color: $primary !important
@@ -66,7 +78,7 @@ hr.separator
 
 .navbar
   background: transparent !important
-  width: 100%;
+  width: 100%
   font-family: 'Raleway'
 
   .navbar-brand
@@ -162,20 +174,20 @@ hr.separator
 
 .header-carousel
   position: relative
-  min-height: 100vh;
+  min-height: 100vh
   // height: 100vh
   // position: absolute;
   // top: 0;
   // left: 0;
   &::after
-    content: ""; // ::before and ::after both require content
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(0deg, transparent, #1d1d1d);
-    opacity: 0.7;
+    content: "" // ::before and ::after both require content
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-image: linear-gradient(0deg, transparent, #1d1d1d)
+    opacity: 0.7
 
 .content h1,
 .content h2,
@@ -233,7 +245,6 @@ button.button
   padding: 10px 12px
   font-size: 14px
   line-height: normal
-  background-color: #fff
   border-radius: .25rem
   text-decoration: none
   font-weight: 600
@@ -261,8 +272,7 @@ button.button
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
 footer.footer
-  //padding: 3rem 0rem 0rem
-  padding: 0
+  padding: 3rem 1.5rem 1rem
   background-color: transparent
 
 footer .social-icons a
@@ -301,13 +311,13 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 .blog
   align-items: center
@@ -321,16 +331,16 @@ $menu-label-color: $white-ter
     position: relative
 
   .image-wrap .overlay
-    position: absolute;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    color: white;
-    opacity: 0;
-    transition: opacity .3s ease;
-    background-color: #000;
+    position: absolute
+    top: 0
+    left: 0
+    box-sizing: border-box
+    width: 100%
+    height: 100%
+    color: white
+    opacity: 0
+    transition: opacity .3s ease
+    background-color: #000
     display: flex
     align-items: center
     justify-content: center
@@ -340,7 +350,7 @@ $menu-label-color: $white-ter
     border-radius: 5px
 
   .image-wrap:hover .overlay
-    opacity: 0.8;
+    opacity: 0.8
 
   .menu-image
     position: absolute
@@ -382,7 +392,6 @@ $menu-label-color: $white-ter
 
   .radio-group
     margin-top: 0.8rem
-
 
 .page-contact-thanks
   min-height: 50vh
@@ -517,13 +526,21 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
-  .navbar-item .logo
-    max-width: 130px !important
-    max-height: 52px !important
+  .navbar
+    padding: 0 1.5rem
+  .navbar-item
+    padding: 0.5rem 0
+    .logo
+      max-width: 130px !important
+      max-height: 52px !important
+    &.dropdown .dropdown-menu
+      position: relative
+      .dropdown-content
+        background: rgba(243, 243, 243, 0.9)
+        box-shadow: none
   .navbar-brand
     display: flex
     align-items: center
-    margin-right: 0.5rem
 
   .page-about
     .page-about-content
@@ -532,6 +549,17 @@ $menu-label-color: $white-ter
       .about-img-container
         margin-right: 0 !important
         margin-bottom: 2rem
+
+  .header-carousel
+    min-height: auto
+
+  .section--gradient
+    margin-top: 1.5rem
+
+  .radio-group.dream-style
+    label:last-child
+      margin-left: 0
+      margin-top: 0.5rem
 
 @media screen and (max-width: 1023px)
   .section 

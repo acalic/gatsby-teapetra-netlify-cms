@@ -188,7 +188,7 @@ export default class Index extends React.Component {
                     <label className="label" htmlFor={'style'}>
                       YOUR DREAM SYLE:
                     </label>
-                    <div className="control radio-group">
+                    <div className="control radio-group dream-style">
                       <label className="radio">
                         <input type="radio" id="style-1" name="style" value="boho"/>
                         <label htmlFor="style-1">Boho</label>

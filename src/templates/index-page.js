@@ -102,50 +102,48 @@ export const IndexPageTemplate = ({
     </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-            
-                <ScrollAnimation animateIn="slideInUp">
-                  <div className="home-header-paragraph">
-                    <h1 className="title">{title}</h1>
-                    <p className="subtitle">{description}</p>
-                  </div>
-                </ScrollAnimation >
-                
-                {/* <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div> */}
-                {/* <Features gridItems={intro.blurbs} /> */}
-                {/* <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="content">
+
+              <ScrollAnimation animateIn="slideInUp">
+                <div className="home-header-paragraph">
+                  <h1 className="title">{title}</h1>
+                  <p className="subtitle">{description}</p>
+                </div>
+              </ScrollAnimation >
+
+              {/* <div className="columns">
+                <div className="column is-12">
+                  <h3 className="has-text-weight-semibold is-size-2">
+                    {heading}
+                  </h3>
+                  <p>{description}</p>
+                </div>
+              </div> */}
+              {/* <Features gridItems={intro.blurbs} /> */}
+              {/* <div className="columns">
+                <div className="column is-12 has-text-centered">
+                  <Link className="btn" to="/products">
+                    See all products
+                  </Link>
+                </div>
+              </div> */}
+
+              <ScrollAnimation animateIn="fadeIn">
+                <div className="is-12 has-margin-top-3">
+                  <h1 className="has-text-weight-semibold">
+                    Latest stories
+                  </h1>
+                  <BlogRoll />
+                  <div className="is-12 has-text-centered">
+                    <Link className="btn" to="/blog">
+                      READ MORE
                     </Link>
                   </div>
-                </div> */}
+                </div>
+              </ScrollAnimation >
 
-                <ScrollAnimation animateIn="fadeIn">
-                  <div className="is-12 has-margin-top-3">
-                    <h1 className="has-text-weight-semibold">
-                      Latest stories
-                    </h1>
-                    <BlogRoll />
-                    <div className="is-12 has-text-centered">
-                      <Link className="btn" to="/blog">
-                        READ MORE
-                      </Link>
-                    </div>
-                  </div>
-                </ScrollAnimation >
-
-              </div>
             </div>
           </div>
         </div>

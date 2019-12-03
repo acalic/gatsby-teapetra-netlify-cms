@@ -15,7 +15,7 @@ export const AboutPageTemplate = ({ title, mainimage, content, contentComponent 
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section content">
+            <div className="content">
               <h1 className="title is-size-3 is-bold-light">
                 {title}
               </h1>
