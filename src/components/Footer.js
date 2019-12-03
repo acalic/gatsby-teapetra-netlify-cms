@@ -11,7 +11,7 @@ const Footer = class extends React.Component {
       <footer className="footer">
         <div className="content has-text-centered">
           <div className="container has-text-black">
-            <span><strong>ROMANTIC. IDEALIST.</strong></span>
+            <span id="footer-tagline">ROMANTIC. IDEALIST.</span>
             <hr className="separator"></hr>
             <div className="column">
               TeaPetra 2020.
