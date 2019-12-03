@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: Photography
+title: ''
 description: >-
   Photography is the art, application and practice of creating durable images by
   recording light or other electromagnetic radiation, either electronically by
