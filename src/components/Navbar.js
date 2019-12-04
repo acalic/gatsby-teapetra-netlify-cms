@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 //import logo from '../img/logo.svg'
 import logo from '../img/logo-teapetra.png'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import { Location } from '@reach/router';
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -75,23 +76,29 @@ const Navbar = class extends React.Component {
               <div className="navbar-item dropdown">
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>Portfolio</span>
+                    <Location>
+                      {({ location }) => {
+                        let urlSegments = location.pathname.split("/");
+                        console.log(urlSegments);
+                        return <span className={"navbar-item " + (urlSegments[1] == 'portfolio' ? 'active' : '')}>Portfolio</span>
+                      }}
+                    </Location>
                   </div>
                 </div>
                 <div className="dropdown-menu" id="dropdown-menu" role="menu">
                   <ul className="dropdown-content">
-                    <AniLink fade duration={0.4} to="/portfolio/wedding" activeClassName="active">
+                    <AniLink fade duration={0.4} to="/portfolio/wedding" activeClassName="active" partiallyActive={true} getProps={({isPartiallyCurrent}) => isPartiallyCurrent ? { style: {background: 'red'}} : null}>
                       <li className="dropdown-item">
                         Wedding
                       </li>
                     </AniLink>
-                    <AniLink fade duration={0.4} to="/portfolio/elopement" activeClassName="active">
+                    <AniLink fade duration={0.4} to="/portfolio/elopement" activeClassName="active" partiallyActive={true}>
                       <li className="dropdown-item">
                         Elopement
                       </li>
                     </AniLink>
-                    <AniLink fade duration={0.4} to="/portfolio/lifestyle" activeClassName="active">
-                      <li href="#" className="dropdown-item">
+                    <AniLink fade duration={0.4} to="/portfolio/lifestyle" activeClassName="active" partiallyActive={true}>
+                      <li className="dropdown-item">
                         Lifestyle
                       </li>
                     </AniLink>
@@ -101,30 +108,36 @@ const Navbar = class extends React.Component {
               <div className="navbar-item dropdown">
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu">
-                    <span>Musica</span>
+                    <Location>
+                      {({ location }) => {
+                        let urlSegments = location.pathname.split("/");
+                        console.log(urlSegments);
+                        return <span className={"navbar-item " + (urlSegments[1] == 'musica' ? 'active' : '')}>Musica</span>
+                      }}
+                    </Location>
                   </div>
                 </div>
                 <div className="dropdown-menu" id="dropdown-menu" role="menu">
                   <ul className="dropdown-content">
-                    <AniLink fade duration={0.4} to="/musica/biography" activeClassName="active">
+                    <AniLink fade duration={0.4} to="/musica/biography" activeClassName="active" partiallyActive={true}>
                       <li className="dropdown-item">
                         Biography
                       </li>
                     </AniLink>
-                    <AniLink fade duration={0.4} to="/musica/videos" activeClassName="active">
+                    <AniLink fade duration={0.4} to="/musica/videos" activeClassName="active" partiallyActive={true}>
                       <li className="dropdown-item">
                         Videos
                       </li>
                     </AniLink>
-                    <AniLink fade duration={0.4} to="/musica/prices" activeClassName="active">
-                      <li href="#" className="dropdown-item">
+                    <AniLink fade duration={0.4} to="/musica/prices" activeClassName="active" partiallyActive={true}>
+                      <li className="dropdown-item">
                         Prices
                       </li>
                     </AniLink>
                   </ul>
                 </div>
               </div>
-              <AniLink fade duration={0.4} className="navbar-item" to="/blog" activeClassName="active">
+              <AniLink fade duration={0.4} className="navbar-item" to="/blog" activeClassName="active" partiallyActive={true}>
                 Blog
               </AniLink>
               <AniLink fade duration={0.4} className="navbar-item" to="/contact" activeClassName="active">

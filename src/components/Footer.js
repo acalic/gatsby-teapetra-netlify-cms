@@ -3,7 +3,7 @@ import React from 'react'
 import instagram from '../img/social/instagram.svg'
 import facebook from '../img/social/facebook.svg'
 import linkedin from '../img/social/linkedin.svg'
-import scrolltop from '../img/chevron-upwards-arrow.svg'
+//import scrolltop from '../img/chevron-upwards-arrow.svg'
 
 const Footer = class extends React.Component {
   render() {
