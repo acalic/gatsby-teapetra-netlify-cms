@@ -142,12 +142,12 @@ export default class Index extends React.Component {
                       WHAT SERVICES ARE YOU INTERESTED IN
                     </label>
                     <div className="control radio-group">
-                      <label className="radio" htmlFor="services">
-                        <input type="radio" id="services-1" name="services" value="music" defaultChecked />
+                      <label className="radio">
+                        <input type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked />
                         <span>Music</span>
                       </label>
                       <label className="radio">
-                        <input type="radio" id="services-2" name="services" value="photography"/>
+                        <input type={'radio'} id={'services-2'} name={'services'} value={'photography'}/>
                         <span>Photography</span>
                       </label>
                     </div>
@@ -189,20 +189,20 @@ export default class Index extends React.Component {
                       YOUR DREAM SYLE:
                     </label>
                     <div className="control radio-group dream-style">
-                      <label className="radio" htmlFor="style">
-                        <input type="radio" id="style-1" name="style" value="boho"/>
+                      <label className="radio">
+                        <input type={'radio'} id={'style-1'} name={'style'} value={'boho'}/>
                         <span>Boho</span>
                       </label>
                       <label className="radio">
-                        <input type="radio" id="style-2" name="style" value="classic" defaultChecked />
+                        <input type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked/>
                         <span>Classic</span>
                       </label>
                       <label className="radio">
-                        <input type="radio" id="style-3" value="adventurous" name="style"/>
+                        <input type={'radio'} id={'style-3'} name={'style'} value={'adventurous'}/>
                         <span>Adventurous</span>
                       </label>
                       <label className="radio">
-                        <input type="radio" id="style-4" value="romantic" name="style"/>
+                        <input type={'radio'} id={'style-4'} name={'style'} value={'romantic'}/>
                         <span>Romantic</span>
                       </label>
                     </div>
