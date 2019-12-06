@@ -143,11 +143,11 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group">
                       <label className="radio">
-                        <input type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked />
+                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked />
                         <span>Music</span>
                       </label>
                       <label className="radio">
-                        <input type={'radio'} id={'services-2'} name={'services'} value={'photography'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-2'} name={'services'} value={'photography'}/>
                         <span>Photography</span>
                       </label>
                     </div>
@@ -186,23 +186,23 @@ export default class Index extends React.Component {
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={'style'}>
-                      YOUR DREAM SYLE:
+                      YOUR DREAM SYLE
                     </label>
                     <div className="control radio-group dream-style">
                       <label className="radio">
-                        <input type={'radio'} id={'style-1'} name={'style'} value={'boho'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-1'} name={'style'} value={'boho'}/>
                         <span>Boho</span>
                       </label>
                       <label className="radio">
-                        <input type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked/>
                         <span>Classic</span>
                       </label>
                       <label className="radio">
-                        <input type={'radio'} id={'style-3'} name={'style'} value={'adventurous'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-3'} name={'style'} value={'adventurous'}/>
                         <span>Adventurous</span>
                       </label>
                       <label className="radio">
-                        <input type={'radio'} id={'style-4'} name={'style'} value={'romantic'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-4'} name={'style'} value={'romantic'}/>
                         <span>Romantic</span>
                       </label>
                     </div>
@@ -211,7 +211,7 @@ export default class Index extends React.Component {
 
                   <div className="field">
                     <label className="label" htmlFor={'message'}>
-                      Message
+                      MESSAGE
                     </label>
                     <div className="control">
                       <textarea
