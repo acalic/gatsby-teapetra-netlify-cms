@@ -3,11 +3,11 @@ import Layout from '../components/Layout'
 
 const NotFoundPage = () => (
   <Layout>
-    <section class="hero is-medium is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">NOT FOUND</h1>
-          <h2 class="subtitle">You just hit a route that doesn&#39;t exist... the sadness.</h2>
+    <section className="section page-404">
+      <div className="container">
+        <div className="content">
+          <h1>NOTHING FOUND</h1>
+          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
         </div>
       </div>
     </section>

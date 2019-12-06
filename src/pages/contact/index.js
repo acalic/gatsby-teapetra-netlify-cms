@@ -144,11 +144,11 @@ export default class Index extends React.Component {
                     <div className="control radio-group">
                       <label className="radio">
                         <input type="radio" id="services-1" name="services" value="music" defaultChecked />
-                        <label htmlFor="services-1">Music</label>
+                        <span htmlFor="services-1">Music</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="services-2" name="services" value="photography"/>
-                        <label htmlFor="services-2">Photography</label>
+                        <span htmlFor="services-2">Photography</span>
                       </label>
                     </div>
                   </div>
@@ -191,19 +191,19 @@ export default class Index extends React.Component {
                     <div className="control radio-group dream-style">
                       <label className="radio">
                         <input type="radio" id="style-1" name="style" value="boho"/>
-                        <label htmlFor="style-1">Boho</label>
+                        <span htmlFor="style-1">Boho</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-2" name="style" value="classic" defaultChecked />
-                        <label htmlFor="style-2">Classic</label>
+                        <span htmlFor="style-2">Classic</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-3" value="adventurous" name="style"/>
-                        <label htmlFor="style-3">Adventurous</label>
+                        <span htmlFor="style-3">Adventurous</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-4" value="romantic" name="style"/>
-                        <label htmlFor="style-4">Romantic</label>
+                        <span htmlFor="style-4">Romantic</span>
                       </label>
                     </div>
                   </div>

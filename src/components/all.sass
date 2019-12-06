@@ -391,7 +391,8 @@ $menu-label-color: $white-ter
   .radio-group
     margin-top: 0.8rem
 
-.page-contact-thanks
+.page-contact-thanks,
+.page-404
   min-height: 50vh
   display: flex
   align-items: center
@@ -457,8 +458,8 @@ $menu-label-color: $white-ter
   position: absolute
   left: -9999px
 
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
+[type="radio"]:checked + span,
+[type="radio"]:not(:checked) + span
   position: relative
   padding-left: 28px
   cursor: pointer
@@ -466,8 +467,8 @@ $menu-label-color: $white-ter
   display: inline-block
   color: #666
 
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before 
+[type="radio"]:checked + span:before,
+[type="radio"]:not(:checked) + span:before
   content: ''
   position: absolute
   left: 0
@@ -478,8 +479,8 @@ $menu-label-color: $white-ter
   border-radius: 100%
   background: #fff
 
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after 
+[type="radio"]:checked + span:after,
+[type="radio"]:not(:checked) + span:after
   content: ''
   width: 12px
   height: 12px
@@ -491,12 +492,12 @@ $menu-label-color: $white-ter
   -webkit-transition: all 0.2s ease
   transition: all 0.2s ease
 
-[type="radio"]:not(:checked) + label:after 
+[type="radio"]:not(:checked) + span:after
   opacity: 0
   -webkit-transform: scale(0)
   transform: scale(0)
 
-[type="radio"]:checked + label:after 
+[type="radio"]:checked + span:after
   opacity: 1
   -webkit-transform: scale(1)
   transform: scale(1)
@@ -550,8 +551,6 @@ label.radio label
       .about-img-container
         margin-right: 0 !important
         margin-bottom: 2rem
-  .page-contact
-    margin-top: 2rem
 
   .header-carousel
     min-height: auto
@@ -563,6 +562,14 @@ label.radio label
     label:last-child
       margin-left: 0
       margin-top: 0.5rem
+
+  .page-contact
+    margin-top: 2rem
+
+  .page-contact-thanks,
+  .page-404
+    .container .content
+      padding: 3rem
 
 @media screen and (max-width: 1023px)
   .section 
