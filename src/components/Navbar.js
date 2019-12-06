@@ -79,8 +79,7 @@ const Navbar = class extends React.Component {
                     <Location>
                       {({ location }) => {
                         let urlSegments = location.pathname.split("/");
-                        console.log(urlSegments);
-                        return <span className={"navbar-item " + (urlSegments[1] == 'portfolio' ? 'active' : '')}>Portfolio</span>
+                        return <span className={"navbar-item " + (urlSegments[1] === 'portfolio' ? 'active' : '')}>Portfolio</span>
                       }}
                     </Location>
                   </div>
@@ -111,8 +110,7 @@ const Navbar = class extends React.Component {
                     <Location>
                       {({ location }) => {
                         let urlSegments = location.pathname.split("/");
-                        console.log(urlSegments);
-                        return <span className={"navbar-item " + (urlSegments[1] == 'musica' ? 'active' : '')}>Musica</span>
+                        return <span className={"navbar-item " + (urlSegments[1] === 'musica' ? 'active' : '')}>Musica</span>
                       }}
                     </Location>
                   </div>

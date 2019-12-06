@@ -142,13 +142,13 @@ export default class Index extends React.Component {
                       WHAT SERVICES ARE YOU INTERESTED IN
                     </label>
                     <div className="control radio-group">
-                      <label className="radio">
+                      <label className="radio" htmlFor="services">
                         <input type="radio" id="services-1" name="services" value="music" defaultChecked />
-                        <span htmlFor="services-1">Music</span>
+                        <span>Music</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="services-2" name="services" value="photography"/>
-                        <span htmlFor="services-2">Photography</span>
+                        <span>Photography</span>
                       </label>
                     </div>
                   </div>
@@ -189,21 +189,21 @@ export default class Index extends React.Component {
                       YOUR DREAM SYLE:
                     </label>
                     <div className="control radio-group dream-style">
-                      <label className="radio">
+                      <label className="radio" htmlFor="style">
                         <input type="radio" id="style-1" name="style" value="boho"/>
-                        <span htmlFor="style-1">Boho</span>
+                        <span>Boho</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-2" name="style" value="classic" defaultChecked />
-                        <span htmlFor="style-2">Classic</span>
+                        <span>Classic</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-3" value="adventurous" name="style"/>
-                        <span htmlFor="style-3">Adventurous</span>
+                        <span>Adventurous</span>
                       </label>
                       <label className="radio">
                         <input type="radio" id="style-4" value="romantic" name="style"/>
-                        <span htmlFor="style-4">Romantic</span>
+                        <span>Romantic</span>
                       </label>
                     </div>
                   </div>

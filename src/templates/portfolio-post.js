@@ -22,7 +22,7 @@ export const PortfolioPostTemplate = ({
 
   //console.log(galleryImages[0][0].childImageSharp.fluid.src);
 
-  {/*const photos = [
+  /*const photos = [
     {
       src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
       width: 4,
@@ -68,7 +68,7 @@ export const PortfolioPostTemplate = ({
       width: 4,
       height: 3
     }
-  ];*/}
+  ];*/
 
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
