@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-//import logo from '../img/logo.svg'
-import logo from '../img/logo-teapetra.png'
+import logo from '../img/logo.png'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Location } from '@reach/router';
 

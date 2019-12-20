@@ -3,7 +3,7 @@ import React from 'react'
 import instagram from '../img/social/instagram.svg'
 import facebook from '../img/social/facebook.svg'
 import linkedin from '../img/social/linkedin.svg'
-//import scrolltop from '../img/chevron-upwards-arrow.svg'
+import separator from '../img/separator.png'
 
 const Footer = class extends React.Component {
   render() {
@@ -11,8 +11,9 @@ const Footer = class extends React.Component {
       <footer className="footer">
         <div className="content has-text-centered">
           <div className="container has-text-black">
-            <span id="footer-tagline">ROMANTIC. IDEALIST.</span>
-            <hr className="separator"></hr>
+            <h4 id="footer-tagline">ROMANTIC. IDEALIST.</h4>
+            {/*<hr className="separator"></hr>*/}
+            <img className="separator" src={separator} alt="Separator"/>
             <div className="column">
               TeaPetra 2020.
             </div>
