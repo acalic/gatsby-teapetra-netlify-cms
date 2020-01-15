@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import logo from '../img/logo.png'
+//import logo from '../img/logo-blue.png'
+import logo1 from '../img/TPlogo1 gold.png'
+import logo2 from '../img/TPlogo1 gold2.png'
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import { Location } from '@reach/router';
 
@@ -43,7 +45,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img className="logo" src={logo} alt="teapetra.com"/>
+              <img className="logo" src={this.props.isHome ? logo2 : logo1} alt="teapetra.com"/>
             </Link>
             {/* Hamburger menu */}
             <div
