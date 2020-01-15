@@ -27,13 +27,13 @@ const Footer = class extends React.Component {
                   alt="Instagram"
                 />
               </a>
-              <a title="facebook" href="https://facebook.com/">
+              <a title="facebook" href="https://www.facebook.com/odette.kokeshi">
                 <img
                   src={facebook}
                   alt="Facebook"
                 />
               </a>
-              <a title="linkedin" href="https://linkedin.com/in/">
+              <a title="linkedin" href="https://www.linkedin.com/in/tea-petra-debak-8919a0106">
                 <img
                   src={linkedin}
                   alt="Linkedin"
