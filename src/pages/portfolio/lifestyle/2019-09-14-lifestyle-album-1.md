@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: PORTRAITS
+title: SECTION I
 description: >-
   Since I've been in photography I had a chance to take photos of my friends,
   cousins and boyfriends...aaaand so one. In this album you can take a quick
