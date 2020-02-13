@@ -2,8 +2,8 @@
 templateKey: index-page
 title: OPENING WEBSITE
 description: >-
-  It is Valentine's day. It is THE most blessed day to put my site up. Year 2019
-  is far far away and 2020. is ready to shine.
+  It is Valentine's day. It is THE most blessed day to put my site up. I promise
+  I would be on time with every order. Dear 2020 let's shine :)
 mainCarousel:
   image1: /img/621966_4442598709496_1188228950_o.jpg
   image2: /img/12038955_10207861512042120_9164043935584060012_o.jpg
