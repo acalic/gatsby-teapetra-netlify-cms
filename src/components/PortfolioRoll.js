@@ -23,7 +23,6 @@ class PortfolioRoll extends React.Component {
                 className="image-wrap"
               >
                 <PreviewCompatibleImage
-                  className="menu-image"
                   imageInfo={{
                     image: post.frontmatter.featuredimage,
                     alt: `featured image thumbnail for post ${
