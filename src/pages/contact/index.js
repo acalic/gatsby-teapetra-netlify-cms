@@ -143,11 +143,11 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group">
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked checked/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value='music' defaultChecked={true}/>
                         <span>Music</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'services-2'} name={'services'} value={'photography'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-2'} name={'services'} value='photography'/>
                         <span>Photography</span>
                       </label>
                     </div>
@@ -194,7 +194,7 @@ export default class Index extends React.Component {
                         <span>Boho</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked checked/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'}/>
                         <span>Classic</span>
                       </label>
                       <label className="radio">
