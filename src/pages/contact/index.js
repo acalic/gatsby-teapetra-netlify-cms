@@ -12,7 +12,11 @@ function encode(data) {
 export default class Index extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { isValidated: false }
+    this.state = {
+      isValidated: false,
+      services: 'music',
+      style: 'classic'
+    }
   }
 
   handleChange = e => {
@@ -143,7 +147,7 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group">
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} checked={'music'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked/>
                         <span>Music</span>
                       </label>
                       <label className="radio">
@@ -194,7 +198,7 @@ export default class Index extends React.Component {
                         <span>Boho</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} checked={'classic'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked/>
                         <span>Classic</span>
                       </label>
                       <label className="radio">
