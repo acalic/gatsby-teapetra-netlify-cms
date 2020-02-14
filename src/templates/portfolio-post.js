@@ -50,7 +50,7 @@ export const PortfolioPostTemplate = ({
 
             <p>{description}</p>
 
-            <Gallery photos={photos} onClick={openLightbox} />
+            <Gallery photos={photos} onClick={openLightbox} direction={'row'}/>
 
             <ModalGateway>
               {viewerIsOpen ? (
@@ -130,7 +130,7 @@ export const pageQuery = graphql`
         description
         galleryImages {
           childImageSharp {
-            fluid(maxWidth: 1024, quality: 100) {
+            fluid(maxWidth: 1024, maxHeight: 1024, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
