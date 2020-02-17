@@ -105,7 +105,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       # - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
-          field: {label: "Images", name: "images", widget: "list", allow_add: true, field:
+          field: {label: "Images", name: "images", widget: "list", field:
             {label: Image, name: image, widget: image}
           }
         }
@@ -123,8 +123,8 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       # - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
-          field: {label: "Images", name: "images", widget: "list", allow_add: true, field:
-            {label: Image, name: image, widget: image,
+          field: {label: "Images", name: "images", widget: "list", field:
+            {label: Image, name: image, widget: image, , default: '/img/header-1.jpg',
               media_library: { config: { multiple: true } }
             }
           }
@@ -143,7 +143,7 @@ collections:
       - {label: "Featured Image", name: "featuredimage", widget: image}
       #- {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
-          field: {label: "Images", name: "images", widget: "list", allow_add: true, field:
+          field: {label: "Images", name: "images", widget: "list", field:
             {label: Image, name: image, widget: image}
           }
         }
