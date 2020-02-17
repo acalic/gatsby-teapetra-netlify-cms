@@ -106,7 +106,9 @@ collections:
       # - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
           field: {label: "Images", name: "images", widget: "list", field:
-            {label: Image, name: image, widget: image}
+            {label: Image, name: image, widget: image, , default: '',
+              media_library: { config: { multiple: true } }
+            }
           }
         }
   
@@ -124,7 +126,7 @@ collections:
       # - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
           field: {label: "Images", name: "images", widget: "list", field:
-            {label: Image, name: image, widget: image, , default: '/img/header-1.jpg',
+            {label: Image, name: image, widget: image, , default: '',
               media_library: { config: { multiple: true } }
             }
           }
@@ -144,6 +146,8 @@ collections:
       #- {label: "Tags", name: "tags", widget: "list"}
       - {label: "Gallery", name: "galleryImages", widget: "list", allow_add: false, 
           field: {label: "Images", name: "images", widget: "list", field:
-            {label: Image, name: image, widget: image}
+            {label: Image, name: image, widget: image, , default: '',
+              media_library: { config: { multiple: true } }
+            }
           }
         }
