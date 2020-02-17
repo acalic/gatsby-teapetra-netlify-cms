@@ -33,7 +33,11 @@ export const PortfolioPostTemplate = ({
     setViewerIsOpen(false);
   };
 
-  let photos = galleryImages[0];
+  let photos = []
+
+  if(galleryImages && galleryImages.length) {
+    photos = galleryImages[0];
+  }
 
   photos = photos.map(obj=> ({ ...obj, src: obj.childImageSharp.fluid.src, height: 1, width: 1 }))
 

@@ -15,7 +15,10 @@ class BlogRoll extends React.Component {
       <div className="blog columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
-            <article className="is-parent column is-4" key={post.id}>
+            <article
+              className={"is-parent column is-4 " + (post.frontmatter.postvisible ? '' : 'hidden')}
+              key={post.id}
+            >
               <AniLink 
                 fade 
                 to={post.fields.slug}
@@ -65,6 +68,7 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                postvisible
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 400, maxHeight: 300, quality: 100) {
