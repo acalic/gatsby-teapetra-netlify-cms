@@ -5,11 +5,9 @@ title: Biography
 ## <!--StartFragment-->
 
 ## \
-I appreciate the connection. It drives you in another dimension. Music has that effect on me. A lot of musicians had developed their own,unique sound. In fact, that is musicians o
+I appreciate the connection. It drives you in another dimension. Music has that effect on me. A lot of musicians had developed their own,unique sound. In fact, that is musicians obligation.
 
 ![](/img/1077562_10201633914996086_1492515090_o.jpg)
-
-## bligation.
 
 Musician iterpretate silence and it is one-way street. Once you start to compose, play or sing you will do it all the time. Once music meets you and you meet music and you love each other after years that is love.
 
