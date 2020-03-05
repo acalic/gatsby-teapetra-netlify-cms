@@ -39,14 +39,26 @@ export const PortfolioPostTemplate = ({
     photos = galleryImages[0];
   }
 
-  photos = photos.map(obj=> ({ ...obj, src: obj.childImageSharp.fluid.src, height: 1, width: 1 }))
+  photos = photos.map(function(obj, index){
+
+    let pAspectRat = obj.childImageSharp.fluid.aspectRatio;
+    let pWidthRatio, pHeightRatio;
+    //var pWidth = getWidthFromStr(obj.childImageSharp.fluid.sizes);
+    //var pHeight = pWidth * pAspectRat;
+
+    if (pAspectRat >= 1.2) { pWidthRatio = 4; pHeightRatio = 3; } //landscape;
+    if (pAspectRat <= 0.8) { pWidthRatio = 3; pHeightRatio = 4; } //portrait;
+    if (pAspectRat > 0.8 && pAspectRat < 1.2) { pWidthRatio = 1; pHeightRatio = 1; } //square
+
+    return { ...obj, src: obj.childImageSharp.fluid.src, width: pWidthRatio, height: pHeightRatio };
+  })
 
   return (
-    <section className="section">
+    <section className="section porfolio-post">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-10 is-offset-1 portfolio-post-gallery">
 
             <h1 className="title has-text-weight-bold is-bold-light">
               {title}
@@ -54,7 +66,11 @@ export const PortfolioPostTemplate = ({
 
             <p>{description}</p>
 
-            <Gallery photos={photos} onClick={openLightbox} direction={'row'}/>
+            <Gallery
+              photos={photos}
+              onClick={openLightbox}
+              direction={'row'}
+            />
 
             <ModalGateway>
               {viewerIsOpen ? (
@@ -134,7 +150,7 @@ export const pageQuery = graphql`
         description
         galleryImages {
           childImageSharp {
-            fluid(maxWidth: 1024, maxHeight: 1024, quality: 100) {
+            fluid (maxHeight: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
