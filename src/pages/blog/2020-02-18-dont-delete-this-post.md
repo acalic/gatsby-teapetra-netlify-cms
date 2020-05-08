@@ -1,13 +1,19 @@
 ---
 templateKey: blog-post
-title: Don't delete this post!
-date: 2020-02-18T22:24:14.054Z
-description: >-
-  Nije vidljiv na sajtu, uvijek treba postojati najmanje jedan blog post! Ako
-  dodas neki svoj kasnije onda mozes pobrisati ovaj.
+title: ANCIENT & CLASSICAL
+date: 2020-05-08T22:00:00.000Z
+description: >
+  My attention got serious when I realize I have a classic elopement in front of
+  me.
 postvisible: false
-featuredimage: /img/sebastian-unrau-47679-unsplash.jpg
+featuredimage: /img/_MG_1587.jpg
 tags:
   - testing
 ---
-...
+`NADINE & NEIL` 
+
+![](/img/_MG_1874.jpg)
+
+`NADINE:` strong, nervous, funny, obvious
+
+`NEIL:` gentelman, warm, clever, spotless
