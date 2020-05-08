@@ -10,5 +10,8 @@ galleryImages:
     - /img/_MG_1091.jpg
     - /img/_MG_1110.jpg
     - /img/_MG_1136.jpg
+    - /img/_MG_1224.jpg
+    - /img/_MG_1234.jpg
+    - /img/_MG_1227.jpg
 ---
 
