@@ -11,9 +11,7 @@ mainimage: /img/1D1A5768.jpg
 
 Yes, I'm friendly but I need ''Tea's time'' every day. In 30 minutes I can recharge my batteries. I'm the lucky one 'cause I live in Dalmatia so I can implement a holistic lifestyle.
 
-
-
-##### My virutes are nobility (help and give) and magnificence. So, if I'm not an artist I would be the doctor.
+##### My virtues are nobility (help and give) and magnificence. So, if I'm not an artist I would be the doctor.
 
 <!--StartFragment-->
 
@@ -22,8 +20,6 @@ Yes, I'm friendly but I need ''Tea's time'' every day. In 30 minutes I can recha
 > Walk beside me… just be my friend”
 
 <!--EndFragment-->
-
-
 
 <!--EndFragment-->
 
