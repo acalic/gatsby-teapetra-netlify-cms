@@ -5,7 +5,7 @@ date: 2020-05-08T22:00:00.000Z
 description: >
   My attention got serious when I realize I have a classic elopement in front of
   me.
-postvisible: false
+postvisible: true
 featuredimage: /img/_MG_1587.jpg
 tags:
   - testing
