@@ -2,7 +2,7 @@
 templateKey: portfolio-post
 title: NADINE & NEIL
 description: My first elopement
-featuredimage: /img/_mg_1110.jpg
+featuredimage: /img/_MG_1110.jpg
 galleryImages:
   - - /img/_MG_1030.jpg
     - /img/_MG_1027.jpg
