@@ -3,7 +3,7 @@ templateKey: about-page
 title: Being Tea Petra
 mainimage: /img/1D1A5768.jpg
 ---
-## Hey you! My name is **Petra, Tea Petra**. Yes, two names but not two characters. My soulmates are violin, camera and my time. Ou, and, yes. To mention- Going to restaurant? Jogging? Even surfing on the internet? Let's plan it 'cause time management is weapon to make art better.
+## Hey you! My name is **Petra, Tea Petra**. Yes, two names but not two characters. My soulmates are violin, camera and my time. Ou, and, yes. To mention - Going to restaurant? Jogging? Even surfing on the internet? Let's plan it 'cause time management is weapon to make art better.
 
 **ADORING:** dancing, walking, reading, writing, posing, playing, being argumentative, idealizing, brainstorming, analyzing, loving, kissing, exploring, listening, eating, bathing etc. Sometimes I watch TV and Netflix.
 
