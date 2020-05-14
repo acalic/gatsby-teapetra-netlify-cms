@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
-title: ANCIENT & CLASSICAL
-date: 2020-05-08T22:00:00.000Z
+title: HVAR
+date: 2020-05-14T20:48:00.000Z
 description: >
   My attention got serious when I realize I have a classic elopement in front of
   me.
@@ -33,6 +33,6 @@ I opened the main door and entered inside. Me, in front of the ten chairs and em
 
 Lucky my, now I have **my sweet spot.** 
 
-NADINE & NEIL are couple that 
+**and..**
 
-I didn't try to organize my steps. I notice some places, decide to be spontaneous, and put the couple's spirit to make the rest. It was THE formula that I will definitely implement in my future job.
+The atmosphere was smooth with guests in the relaxed. No wind, no heat. I was smiling, gently. I didn't try to organize my steps. I notice some places, decide to be spontaneous, and put the couple's spirit to make the rest. That was THE formula that I will definitely implement in my future job.
