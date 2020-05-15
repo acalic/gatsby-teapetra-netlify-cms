@@ -14,5 +14,7 @@ galleryImages:
     - /img/_MG_1234.jpg
     - /img/_MG_1227.jpg
     - /img/_MG_1298.jpg
+    - /img/_MG_1254.jpg
+    - /img/_MG_1250.jpg
 ---
 
