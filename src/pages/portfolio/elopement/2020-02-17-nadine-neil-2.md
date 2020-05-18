@@ -21,5 +21,6 @@ galleryImages:
     - /img/_MG_1190.jpg
     - /img/_MG_1185.jpg
     - /img/_MG_1140.jpg
+    - /img/_MG_1158.jpg
 ---
 
