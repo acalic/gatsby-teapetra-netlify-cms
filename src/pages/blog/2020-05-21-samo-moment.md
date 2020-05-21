@@ -4,7 +4,7 @@ title: SAMO MOMENT
 date: 2020-05-21T18:27:00.000Z
 description: |
   ,,Samo moment''
-  Kažeš li to curi u trenutku kad ti se svidi njena skrivenu pjegica ispod oka?
+  Kažeš li to curi u trenutku kad ti se svidi njena skrivena pjegica ispod oka?
   Ili u naletu brzine dobaciš nekom prolazniku koji ti stoji na putu?
 postvisible: true
 featuredimage: /img/11036207_10206997819050335_9029657955154915054_n.jpg
