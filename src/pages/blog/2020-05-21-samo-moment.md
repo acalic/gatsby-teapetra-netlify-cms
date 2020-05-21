@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: SAMO MOMENT
-date: 2020-05-21T18:11:00.000Z
+date: 2020-05-21T18:16:00.000Z
 description: |
   ,,Samo moment''
   Kažeš li to curi u trenutku kad ti se svidi njena skrivenu pjegica ispod oka?
