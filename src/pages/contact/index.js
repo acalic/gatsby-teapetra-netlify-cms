@@ -190,7 +190,7 @@ export default class Index extends React.Component {
                   </div>
                   <div className="field">
                     <label className="label" htmlFor={'style'}>
-                      YOUR DREAM SYLE
+                      YOUR DREAM STYLE
                     </label>
                     <div className="control radio-group dream-style">
                       <label className="radio">
