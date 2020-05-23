@@ -16,5 +16,15 @@ galleryImages:
     - /img/_MG_1298.jpg
     - /img/_MG_1254.jpg
     - /img/_MG_1250.jpg
+    - /img/_MG_1270.jpg
+    - /img/_MG_1316.jpg
+    - /img/_MG_1190.jpg
+    - /img/_MG_1185.jpg
+    - /img/_MG_1140.jpg
+    - /img/_MG_1158.jpg
+    - /img/_MG_1188.jpg
+    - /img/_MG_1359.jpg
+    - /img/_MG_1361.jpg
+    - /img/_MG_1362.jpg
 ---
 
