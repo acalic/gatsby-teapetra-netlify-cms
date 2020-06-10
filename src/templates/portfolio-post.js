@@ -36,23 +36,23 @@ export const PortfolioPostTemplate = ({
   let photos = []
 
   if(galleryImages && galleryImages.length) {
-    photos = galleryImages[0];
+    photos = galleryImages[0].filter(el => el);
   }
 
-  photos = photos.map(function(obj, index){
-    if(obj) {
-      let pAspectRat = obj.childImageSharp.fluid.aspectRatio;
+  photos.forEach(function(item) {
+      let pAspectRat = item.childImageSharp.fluid.aspectRatio;
       let pWidthRatio, pHeightRatio;
-      //var pWidth = getWidthFromStr(obj.childImageSharp.fluid.sizes);
+      //var pWidth = getWidthFromStr(item.childImageSharp.fluid.sizes);
       //var pHeight = pWidth * pAspectRat;
 
       if (pAspectRat >= 1.2) { pWidthRatio = 4; pHeightRatio = 3; } //landscape;
       if (pAspectRat <= 0.8) { pWidthRatio = 3; pHeightRatio = 4; } //portrait;
       if (pAspectRat > 0.8 && pAspectRat < 1.2) { pWidthRatio = 1; pHeightRatio = 1; } //square
 
-      return { ...obj, src: obj.childImageSharp.fluid.src, width: pWidthRatio, height: pHeightRatio };
-    }
-  })
+      item.src = item.childImageSharp.fluid.src;
+      item.width = pWidthRatio;
+      item.height = pHeightRatio;
+  });
 
   return (
     <section className="section porfolio-post">

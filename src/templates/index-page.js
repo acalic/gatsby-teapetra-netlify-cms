@@ -2,33 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+
 import Layout from '../components/Layout'
-//import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 
 import ImageGallery from 'react-image-gallery';
 import './index-page.scss';
 
 import ScrollAnimation from 'react-animate-on-scroll';
-
-// import header1 from "../img/header-1.jpg"
-// import header2 from "../img/header-2.jpg"
-// import header3 from "../img/header-3.jpg"
-
-// const images = [
-//   {
-//     original: header1,
-//     thumbnail: '',
-//   },
-//   {
-//     original: header2,
-//     thumbnail: ''
-//   },
-//   {
-//     original: header3,
-//     thumbnail: ''
-//   }
-// ]
 
 export const IndexPageTemplate = ({
   textColorWhite,
@@ -145,9 +127,13 @@ export const IndexPageTemplate = ({
                   </h3>
                   <BlogRoll />
                   <div className="is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
+                    <AniLink 
+                      fade 
+                      to={"/blog"}
+                      className="btn"
+                    >
                       READ MORE
-                    </Link>
+                    </AniLink>
                   </div>
                 </div>
               </ScrollAnimation >
@@ -172,8 +158,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
-  //console.log(frontmatter.mainCarousel);
 
   const images = [
     {
