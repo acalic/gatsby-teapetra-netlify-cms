@@ -28,4 +28,5 @@ galleryImages:
     - /img/_MG_1362.jpg
     - /img/_mg_1379.jpg
     - /img/_mg_1389b-w.jpg
+    - /img/_mg_1397.jpg
 ---
