@@ -7,7 +7,7 @@ import Content, { HTMLContent } from '../components/Content'
 //import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-export const MusicaPageTemplate = ({ title, mainimage, content, contentComponent }) => {
+export const MusicaPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -50,7 +50,6 @@ const MusicaPage = ({ data }) => {
       <MusicaPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
-        mainimage={post.frontmatter.mainimage}
         content={post.html}
       />
     </Layout>
