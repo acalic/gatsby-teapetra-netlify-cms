@@ -59,11 +59,11 @@ export default class Index extends React.Component {
                   onSubmit={this.handleSubmit}
                 >
                   {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value="contact" aria-label="hidden"/>
                   <div hidden>
                     <label>
                       Don’t fill this out:{' '}
-                      <input name="bot-field" onChange={this.handleChange} />
+                      <input name="bot-field" onChange={this.handleChange} aria-label="bot-field"/>
                     </label>
                   </div>
                   <div className="field">
@@ -78,6 +78,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'name_surname'}
                         required={true}
+                        aria-label="Name & Surname"
                       />
                     </div>
                   </div>
@@ -93,6 +94,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'email'}
                         required={true}
+                        aria-label="E-mail"
                       />
                     </div>
                   </div>
@@ -108,6 +110,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'phone'}
                         required={true}
+                        aria-label="Phone number"
                       />
                     </div>
                   </div>
@@ -123,6 +126,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'date'}
                         required={true}
+                        aria-label="Desired date"
                       />
                     </div>
                   </div>
@@ -138,6 +142,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'location'}
                         required={true}
+                        aria-label="Desired location"
                       />
                     </div>
                   </div>
@@ -147,11 +152,11 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group">
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-1'} name={'services'} value={'music'} defaultChecked aria-label="Music"/>
                         <span>Music</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'services-2'} name={'services'} value={'photography'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'services-2'} name={'services'} value={'photography'} aria-label="Photography"/>
                         <span>Photography</span>
                       </label>
                     </div>
@@ -169,6 +174,7 @@ export default class Index extends React.Component {
                         id={'find'}
                         required={true}
                         placeholder={'Instagram, Facebook, Web site, Friend of yours, LinkedIn'}
+                        aria-label="How did you find me"
                       />
                     </div>
                   </div>
@@ -185,6 +191,7 @@ export default class Index extends React.Component {
                         id={'social'}
                         required={true}
                         placeholder={'Let\'s conect'}
+                        aria-label="Your Instagram or Facebook"
                       />
                     </div>
                   </div>
@@ -194,19 +201,19 @@ export default class Index extends React.Component {
                     </label>
                     <div className="control radio-group dream-style">
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-1'} name={'style'} value={'boho'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-1'} name={'style'} value={'boho'} aria-label="Boho"/>
                         <span>Boho</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} defaultChecked/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-2'} name={'style'} value={'classic'} aria-label="Classic" defaultChecked/>
                         <span>Classic</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-3'} name={'style'} value={'adventurous'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-3'} name={'style'} value={'adventurous'} aria-label="Adventurous"/>
                         <span>Adventurous</span>
                       </label>
                       <label className="radio">
-                        <input onChange={this.handleChange} type={'radio'} id={'style-4'} name={'style'} value={'romantic'}/>
+                        <input onChange={this.handleChange} type={'radio'} id={'style-4'} name={'style'} value={'romantic'} aria-label="Romantic"/>
                         <span>Romantic</span>
                       </label>
                     </div>
@@ -224,6 +231,7 @@ export default class Index extends React.Component {
                         onChange={this.handleChange}
                         id={'message'}
                         required={true}
+                        aria-label="Message"
                       />
                     </div>
                   </div>

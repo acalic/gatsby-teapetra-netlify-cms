@@ -56,15 +56,15 @@ export default class Contact extends React.Component {
                 onSubmit={this.handleSubmit}
               >
                 {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="file-upload" />
+                <input type="hidden" name="form-name" value="file-upload" aria-label="File upload"/>
                 <div hidden>
-                  <label>
+                  <label aria-label="hidden">
                     Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
+                    <input name="bot-field" onChange={this.handleChange} aria-label="hidden"/>
                   </label>
                 </div>
                 <div className="field">
-                  <label className="label" htmlFor={'name'}>
+                  <label className="label" htmlFor={'name'} aria-label="Your name">
                     Your name
                   </label>
                   <div className="control">
@@ -75,6 +75,7 @@ export default class Contact extends React.Component {
                       onChange={this.handleChange}
                       id={'name'}
                       required={true}
+                      aria-label="Your name"
                     />
                   </div>
                 </div>
@@ -86,6 +87,7 @@ export default class Contact extends React.Component {
                         type="file"
                         name="attachment"
                         onChange={this.handleAttachment}
+                        aria-label="File"
                       />
                       <span className="file-cta">
                         <span className="file-label">Choose a file…</span>
@@ -94,7 +96,7 @@ export default class Contact extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <button className="button is-link" type="submit">
+                  <button className="button is-link" type="submit" aria-label="Send">
                     Send
                   </button>
                 </div>

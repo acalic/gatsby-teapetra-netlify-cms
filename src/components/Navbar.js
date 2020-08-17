@@ -48,15 +48,16 @@ const Navbar = class extends React.Component {
               <img className="logo" src={this.props.isHome ? logo2 : logo1} alt="teapetra.com"/>
             </Link>
             {/* Hamburger menu */}
-            <div
+            <button
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
+              onKeyDown={() => this.toggleHamburger()}
             >
               <span />
               <span />
               <span />
-            </div>
+            </button>
           </div>
           <div
             id="navMenu"
