@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 title: Being Tea Petra
-mainimage: /img/1D1A5768.jpg
+mainimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597688953/1D1A5768_s88wum.jpg
 ---
 ## Hey you! My name is **Petra, Tea Petra**. Yes, two names but not two characters. My soulmates are violin, camera and my time. Ou, and, yes. To mention - Going to restaurant? Jogging? Even surfing on the internet? Let's plan it 'cause time management is weapon to make art better.
 
@@ -22,5 +22,3 @@ Yes, I'm friendly but I need ''Tea's time'' every day. In 30 minutes I can recha
 <!--EndFragment-->
 
 <!--EndFragment-->
-
-![]()
