@@ -22,5 +22,3 @@ Yes, I'm friendly but I need ''Tea's time'' every day. In 30 minutes I can recha
 <!--EndFragment-->
 
 <!--EndFragment-->
-
-![]()
