@@ -1,25 +1,23 @@
 ---
 templateKey: portfolio-post
 title: SECTION I
-description: >-
-  Since I've been in photography I had a chance to take photos of my friends,
-  cousins and boyfriends...aaaand so one. In this album you can take a quick
-  look on my last work. New ones are in progress.
-featuredimage: /img/290864_4435012639849_1014626067_o.jpg
+description: Since I've been in photography I had a chance to take photos of my
+  friends, cousins and boyfriends...aaaand so one. In this album you can take a
+  quick look on my last work. New ones are in progress.
+featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597689081/Portfolio/Lifestyle%20-%20Section%201/290864_4435012639849_1014626067_o_uwvs53.jpg
 galleryImages:
-  - - /img/202795_4430954058387_1041482563_o.jpg
-    - /img/622392_4439975123908_1328317562_o.jpg
-    - /img/217852_4430647810731_1895963797_n.jpg
-    - /img/552534_4694156878293_1907370750_n.jpg
-    - /img/255849_4489485281631_1058795050_o.jpg
-    - /img/257900_4441087191709_814258737_o.jpg
-    - /img/884450_10202810092799796_1127854735_o.jpg
-    - /img/259586_4427524332646_1026770653_o.jpg
-    - /img/405235_4458740473030_1807437527_n.jpg
-    - /img/705347_4939227724911_1330504855_o.jpg
-    - /img/1381478_10202202437928804_1450722199_n.jpg
-    - /img/290864_4435012639849_1014626067_o.jpg
-    - /img/422221_4462092636832_409466814_n.jpg
-    - /img/10491216_10204277764290666_7262365482131236889_n.jpg
+  - - - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689102/Portfolio/Lifestyle%20-%20Section%201/884450_10202810092799796_1127854735_o_dlscqg.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689098/Portfolio/Lifestyle%20-%20Section%201/255849_4489485281631_1058795050_o_yuthr9.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689097/Portfolio/Lifestyle%20-%20Section%201/257900_4441087191709_814258737_o_fin2qy.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689097/Portfolio/Lifestyle%20-%20Section%201/622392_4439975123908_1328317562_o_gwfkt5.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689096/Portfolio/Lifestyle%20-%20Section%201/10491216_10204277764290666_7262365482131236889_n_oaeijd.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689095/Portfolio/Lifestyle%20-%20Section%201/259586_4427524332646_1026770653_o_zfy4bd.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689092/Portfolio/Lifestyle%20-%20Section%201/1381478_10202202437928804_1450722199_n_wffvl6.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689089/Portfolio/Lifestyle%20-%20Section%201/705347_4939227724911_1330504855_o_dmmq1c.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689085/Portfolio/Lifestyle%20-%20Section%201/422221_4462092636832_409466814_n_i8aduy.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689082/Portfolio/Lifestyle%20-%20Section%201/552534_4694156878293_1907370750_n_okipkr.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689081/Portfolio/Lifestyle%20-%20Section%201/290864_4435012639849_1014626067_o_uwvs53.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689080/Portfolio/Lifestyle%20-%20Section%201/202795_4430954058387_1041482563_o_xkemcj.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689079/Portfolio/Lifestyle%20-%20Section%201/405235_4458740473030_1807437527_n_hgckge.jpg
+      - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689076/Portfolio/Lifestyle%20-%20Section%201/217852_4430647810731_1895963797_n_wiris9.jpg
 ---
-
