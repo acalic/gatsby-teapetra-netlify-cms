@@ -161,15 +161,15 @@ const IndexPage = ({ data }) => {
 
   const images = [
     {
-      original: frontmatter.mainCarousel.image1.childImageSharp.fluid.src,
+      original: frontmatter.mainCarousel.image1,
       thumbnail: '',
     },
     {
-      original: frontmatter.mainCarousel.image2.childImageSharp.fluid.src,
+      original: frontmatter.mainCarousel.image2,
       thumbnail: ''
     },
     {
-      original: frontmatter.mainCarousel.image3.childImageSharp.fluid.src,
+      original: frontmatter.mainCarousel.image3,
       thumbnail: ''
     }
   ]
@@ -203,27 +203,9 @@ export const pageQuery = graphql`
         title
         description
         mainCarousel {
-          image1 {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          image2 {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-          image3 {
-            childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
+          image1
+          image2
+          image3
         }
       }
     }

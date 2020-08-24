@@ -69,14 +69,7 @@ export default () => (
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
                 postvisible
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 300, quality: 100) {
-                      aspectRatio
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                featuredimage
               }
             }
           }

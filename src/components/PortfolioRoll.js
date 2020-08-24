@@ -65,13 +65,7 @@ export default () => (
                 title
                 description
                 templateKey
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                featuredimage
               }
             }
           }

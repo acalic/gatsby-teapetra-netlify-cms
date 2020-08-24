@@ -6,7 +6,7 @@ description: Since I've been in photography I had a chance to take photos of my
   quick look on my last work. New ones are in progress.
 featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597689081/Portfolio/Lifestyle%20-%20Section%201/290864_4435012639849_1014626067_o_uwvs53.jpg
 galleryImages:
-  - - - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689102/Portfolio/Lifestyle%20-%20Section%201/884450_10202810092799796_1127854735_o_dlscqg.jpg
+  - - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689102/Portfolio/Lifestyle%20-%20Section%201/884450_10202810092799796_1127854735_o_dlscqg.jpg
       - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689098/Portfolio/Lifestyle%20-%20Section%201/255849_4489485281631_1058795050_o_yuthr9.jpg
       - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689097/Portfolio/Lifestyle%20-%20Section%201/257900_4441087191709_814258737_o_fin2qy.jpg
       - https://res.cloudinary.com/teapetradotcom/image/upload/v1597689097/Portfolio/Lifestyle%20-%20Section%201/622392_4439975123908_1328317562_o_gwfkt5.jpg

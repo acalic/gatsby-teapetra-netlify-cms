@@ -1,13 +1,16 @@
-import React, { useState, useCallback } from "react";
-import PropTypes from 'prop-types'
-//import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import Helmet from "react-helmet";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
-import Gallery from "react-photo-gallery";
+import ResponsiveGallery from '../components/ResponsiveGallery';
+
+/* import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
+
+import ScrollAnimation from "react-animate-on-scroll"; */
 
 export const PortfolioPostTemplate = ({
   content,
@@ -16,11 +19,11 @@ export const PortfolioPostTemplate = ({
   tags,
   title,
   helmet,
-  galleryImages
+  galleryImages,
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
-  const [currentImage, setCurrentImage] = useState(0);
+  /* const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
   const openLightbox = useCallback((event, { photo, index }) => {
@@ -31,19 +34,28 @@ export const PortfolioPostTemplate = ({
   const closeLightbox = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
-  };
+  }; */
 
-  let photos = []
+  let photosUrls = [];
+  let photos = [];
 
-  if(galleryImages && galleryImages.length) {
-    photos = galleryImages[0].filter(el => el);
+  if (galleryImages && galleryImages.length) {
+    var merged = [].concat.apply([], galleryImages);
+    photosUrls = merged.filter((el) => el);
   }
 
-  photos.forEach(function(item) {
-      let pAspectRat = item.childImageSharp.fluid.aspectRatio;
+  photosUrls.forEach(function(item) {
+    let photo = {};
+
+    photo.src = item;
+    photo.thumbnail = item;
+    photo.caption = '';
+
+    photos.push(photo);
+
+    /* OLD, WITHOUT CLOUDINARY */
+    /* let pAspectRat = item.childImageSharp.fluid.aspectRatio;
       let pWidthRatio, pHeightRatio;
-      //var pWidth = getWidthFromStr(item.childImageSharp.fluid.sizes);
-      //var pHeight = pWidth * pAspectRat;
 
       if (pAspectRat >= 1.2) { pWidthRatio = 4; pHeightRatio = 3; } //landscape;
       if (pAspectRat <= 0.8) { pWidthRatio = 3; pHeightRatio = 4; } //portrait;
@@ -51,12 +63,12 @@ export const PortfolioPostTemplate = ({
 
       item.src = item.childImageSharp.fluid.src;
       item.width = pWidthRatio;
-      item.height = pHeightRatio;
+      item.height = pHeightRatio; */
   });
 
   return (
     <section className="section porfolio-post">
-      {helmet || ''}
+      {helmet || ""}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1 portfolio-post-gallery">
@@ -67,49 +79,33 @@ export const PortfolioPostTemplate = ({
 
             <p>{description}</p>
 
-            <Gallery
-              photos={photos}
-              onClick={openLightbox}
-              direction={'row'}
+            <ResponsiveGallery
+              images={photos.map(({ src, thumbnail, caption }) => ({
+                src,
+                thumbnail,
+                caption,
+              }))}
             />
 
-            <ModalGateway>
-              {viewerIsOpen ? (
-                <Modal onClose={closeLightbox}>
-                  <Carousel
-                    currentIndex={currentImage}
-                    views={photos.map(x => ({
-                      ...x,
-                      src: x.childImageSharp.fluid.src,
-                      srcset: x.childImageSharp.fluid.srcSet,
-                      sizes: x.childImageSharp.fluid.sizes,
-                      caption: '',
-                    }))}
-                  />
-                </Modal>
-              ) : null}
-            </ModalGateway>
-
             <PostContent content={content} />
-            
+
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 PortfolioPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
-  galleryImages: PropTypes.array,
-}
+  helmet: PropTypes.object
+};
 
 const PortfolioPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -130,16 +126,16 @@ const PortfolioPost = ({ data }) => {
         galleryImages={post.frontmatter.galleryImages}
       />
     </Layout>
-  )
-}
+  );
+};
 
 PortfolioPost.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
-}
+};
 
-export default PortfolioPost
+export default PortfolioPost;
 
 export const pageQuery = graphql`
   query PortfolioPostByID($id: String!) {
@@ -149,14 +145,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        galleryImages {
-          childImageSharp {
-            fluid (maxHeight: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
+        galleryImages
       }
     }
   }
-`
+`;

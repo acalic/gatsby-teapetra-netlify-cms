@@ -6,6 +6,9 @@ Blaž and I took our first record at **Mišo Limić's** studio. We experienced s
 
 <https://www.youtube.com/watch?v=LQX0ER-AzHA>
 
-![photo taken by Maja Maljković](/img/WhatsApp Image 2019-11-29 at 00.30.34.jpeg "violin ")
+![photo taken by Maja Maljković](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688912/WhatsApp_Image_2019-11-29_at_00.30.34_nwqsbm.jpg "violin")
 
-![photo taken by me](/img/_MG_9073.jpg "guitar")
+![photo taken by me](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688873/_MG_9073_lwlbdc.jpg "guitar")
+
+
+

@@ -7,7 +7,7 @@ description: |
   Kažeš li to curi u trenutku kad ti se svidi njena skrivena pjegica ispod oka?
   Ili u naletu brzine dobaciš nekom prolazniku koji ti stoji na putu?
 postvisible: true
-featuredimage: /img/11036207_10206997819050335_9029657955154915054_n.jpg
+featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597688895/11036207_10206997819050335_9029657955154915054_n_rhatn7.jpg
 tags:
   - music
 ---
@@ -27,7 +27,7 @@ Tko stoji iza ovih misli? **Josip Sušić.** Sretneš li ga u društvu dobiti ć
 
 
 
-![.](/img/10428582_10206997818770328_1657504192925804864_n.jpg ".")
+![.](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688894/10428582_10206997818770328_1657504192925804864_n_jaxqjs.jpg ".")
 
 **,,ONA VOLI LJUBAV''** <https://www.youtube.com/watch?v=AwooK_TLEcA>
 
@@ -51,8 +51,8 @@ Zvonce je zasviralo. Vrijeme je za upaliti mikrofone i kamere i snimiti nove stv
 
 TP
 
-![](/img/_MG_5382.JPG)
+![.](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688888/_MG_5382_plt8qt.jpg ".")
 
-![.](/img/_MG_5379.JPG ".")
+![.](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688830/_MG_5379_lfn217.jpg ".")
 
-![.](/img/_MG_5374.JPG ".")
+![.](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688686/_MG_5374_efi083.jpg ".")

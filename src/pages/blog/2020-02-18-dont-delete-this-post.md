@@ -3,20 +3,20 @@ templateKey: blog-post
 title: HVAR
 date: 2020-05-14T20:48:00.000Z
 description: >
-  My attention got serious when I realize I have a classic elopement in front of
+  My attention got serious when I realized I have a classic elopement in front of
   me.
 postvisible: true
-featuredimage: /img/_MG_1587.jpg
+featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597688689/_MG_1587_qwh2og.jpg
 tags:
-  - testing
+  - elopement
 ---
 NADINE & NEIL
 
-![](/img/_MG_1874.jpg)
+![](https://res.cloudinary.com/teapetradotcom/image/upload/v1597688755/_MG_1874_p0l03b.jpg)
 
 #### **NADINE:**     strong, nervous, funny, obvious
 
-#### **NEIL:**            gentelman, warm, clever, spotless
+#### **NEIL:**            gentleman, warm, clever, spotless
 
 
 

@@ -17,6 +17,9 @@ export const PortfolioGallery = ({ data, props }) => {
     if (postGallery === props.galleryName) {
        filtered.push(post);
     }
+
+    console.log(filtered[1]);
+
     return filtered;
   }, []);
 
@@ -72,13 +75,7 @@ export default (props, $gal) => (
                 title
                 description
                 templateKey
-                featuredimage {
-                  childImageSharp {
-                    fluid(maxWidth: 400, maxHeight: 400, quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
+                featuredimage
               }
             }
           }
