@@ -18,7 +18,7 @@ export const PortfolioGallery = ({ data, props }) => {
        filtered.push(post);
     }
 
-    console.log(filtered[1]);
+    //console.log(filtered[1]);
 
     return filtered;
   }, []);
