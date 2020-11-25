@@ -72,40 +72,45 @@ const Navbar = class extends React.Component {
               <AniLink fade duration={0.4} className="navbar-item" to="/about" activeClassName="active">
                 About
               </AniLink>
+              
               {/* <AniLink fade duration={0.4} className="navbar-item" to="/portfolio" activeClassName="active">
                 Portfolio
               </AniLink> */}
-              <div className="navbar-item dropdown">
-                <div className="dropdown-trigger">
-                  <div aria-haspopup="true" aria-controls="dropdown-menu">
-                    <Location>
-                      {({ location }) => {
-                        let urlSegments = location.pathname.split("/");
-                        return <span className={(urlSegments[1] === 'portfolio' ? 'active' : '')}>Portfolio</span>
-                      }}
-                    </Location>
+
+              {this.props.isPortfolioEnabled &&
+                <div className="navbar-item dropdown">
+                  <div className="dropdown-trigger">
+                    <div aria-haspopup="true" aria-controls="dropdown-menu">
+                      <Location>
+                        {({ location }) => {
+                          let urlSegments = location.pathname.split("/");
+                          return <span className={(urlSegments[1] === 'portfolio' ? 'active' : '')}>Portfolio</span>
+                        }}
+                      </Location>
+                    </div>
+                  </div>
+                  <div className="dropdown-menu" id="dropdown-menu" role="menu">
+                    <ul className="dropdown-content">
+                      <AniLink fade duration={0.4} to="/portfolio/wedding" activeClassName="active" partiallyActive={true} getProps={({isPartiallyCurrent}) => isPartiallyCurrent ? { style: {background: 'red'}} : null}>
+                        <li className="dropdown-item">
+                          Wedding
+                        </li>
+                      </AniLink>
+                      <AniLink fade duration={0.4} to="/portfolio/elopement" activeClassName="active" partiallyActive={true}>
+                        <li className="dropdown-item">
+                          Elopement
+                        </li>
+                      </AniLink>
+                      <AniLink fade duration={0.4} to="/portfolio/lifestyle" activeClassName="active" partiallyActive={true}>
+                        <li className="dropdown-item">
+                          Lifestyle
+                        </li>
+                      </AniLink>
+                    </ul>
                   </div>
                 </div>
-                <div className="dropdown-menu" id="dropdown-menu" role="menu">
-                  <ul className="dropdown-content">
-                    <AniLink fade duration={0.4} to="/portfolio/wedding" activeClassName="active" partiallyActive={true} getProps={({isPartiallyCurrent}) => isPartiallyCurrent ? { style: {background: 'red'}} : null}>
-                      <li className="dropdown-item">
-                        Wedding
-                      </li>
-                    </AniLink>
-                    <AniLink fade duration={0.4} to="/portfolio/elopement" activeClassName="active" partiallyActive={true}>
-                      <li className="dropdown-item">
-                        Elopement
-                      </li>
-                    </AniLink>
-                    <AniLink fade duration={0.4} to="/portfolio/lifestyle" activeClassName="active" partiallyActive={true}>
-                      <li className="dropdown-item">
-                        Lifestyle
-                      </li>
-                    </AniLink>
-                  </ul>
-                </div>
-              </div>
+              }
+
               <div className="navbar-item dropdown">
                 <div className="dropdown-trigger">
                   <div aria-haspopup="true" aria-controls="dropdown-menu">

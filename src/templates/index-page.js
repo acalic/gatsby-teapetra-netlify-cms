@@ -175,7 +175,7 @@ const IndexPage = ({ data }) => {
   ]
 
   return (
-    <Layout isHome>
+    <Layout isHome isPortfolioEnabled={frontmatter.portfolio_show}>
       <IndexPageTemplate
         title={frontmatter.title}
         description={frontmatter.description}
@@ -202,6 +202,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
+        portfolio_show
         mainCarousel {
           image1
           image2
