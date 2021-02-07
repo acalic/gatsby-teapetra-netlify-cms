@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: HEY!
-description: "Dragi čitatelju, ti, koji jednostavno voliš estetiku i
+title: Hejej,
+description: "dragi čitatelju, ti, koji jednostavno voliš estetiku i
   sofisticiranu glazbu dobrodošao na TEAPETRArt. Uživaj, klikaj, slušaj,
   kontaktiraj. "
 portfolio_show: true
