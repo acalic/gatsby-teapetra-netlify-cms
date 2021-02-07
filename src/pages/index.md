@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
 title: HEY!
-description: Reader, web lover, photographer, musician or dear parents THANK YOU
-  for stopping by. You are here 'cause you are the dreamer. Let's art connect
-  us. Let's collaborate.
+description: "Dragi čitatelju, ti, koji jednostavno voliš estetiku i
+  sofisticiranu glazbu dobrodošao na TEAPETRArt. Uživaj, klikaj, slušaj,
+  kontaktiraj. "
 portfolio_show: false
 mainCarousel:
   image1: https://res.cloudinary.com/teapetradotcom/image/upload/v1597689266/Portfolio/Lifestyle%20-%20Section%202/621966_4442598709496_1188228950_o_izrufj.jpg
