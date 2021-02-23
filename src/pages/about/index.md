@@ -3,15 +3,15 @@ templateKey: about-page
 title: Being Tea Petra
 mainimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1597688953/1D1A5768_s88wum.jpg
 ---
-## Hey you! My name is **Petra, Tea Petra**. Yes, two names but not two characters. My soulmates are violin, camera and my time. Ou, and, yes. To mention - Going to restaurant? Jogging? Even surfing on the internet? Let's plan it 'cause time management is weapon to make art better.
+Moje ime je Tea Petra Debak, stravstvena violinistica sa aspiracijama da jednog dana dotakne zvijezde
 
-**ADORING:** dancing, walking, reading, writing, posing, playing, being argumentative, idealizing, brainstorming, analyzing, loving, kissing, exploring, listening, eating, bathing etc. Sometimes I watch TV and Netflix.
+**OBOŽAVAM:** plesati, šetati, čitati, pisati, pozirati pred kamerom, svirati, argumentirati, idealizirati, brainstormati, analizirati, voliti, nadati se, ljubiti, istraživati, slušati, jesti
 
-**PETS:  100%** dog person even Jordan Peterson suggested me to touch every cat on the street.
+**LJUBIMCI:  100%** sam za pse, ALI kako Jordan Peterson kaže kako treba pomaziti svaku macu na putu to i napravim
 
-Yes, I'm friendly but I need ''Tea's time'' every day. In 30 minutes I can recharge my batteries. I'm the lucky one 'cause I live in Dalmatia so I can implement a holistic lifestyle.
+**KARAKTER: ekstrovert;** u 30min mogu obnoviti ,,svoje baterije'' i u tim trenutcima se povučem u svoju nutrinu i k tome sam sretnica koja živi u Dalmaciji pa iskorištavam sve blagodati mora
 
-##### My virtues are nobility (help and give) and magnificence. So, if I'm not an artist I would be the doctor.
+**VRIJEDNOSTI:** elan, odlučnost, primanje i davanje, poštenje, odgovornost
 
 <!--StartFragment-->
 
