@@ -8,9 +8,15 @@ Iako sam pjevala dječje pjesme koje su po svojoj strukturi jednostavne, dobila 
 
 Moj primarni instrument je violina. I, srećom, uz gitaru i klavir koje rjeđe sviram, violina drži prvo mjesto na ljestvici najdražih instrumenata.
 
-Tijekom školovanja prosvirala sam i svirala mnogo skladbi, a ona najdraža mi je Meditacija iz opere Thais.
+Tijekom školovanja svirala sam mnoge skladbe, a ona najdraža mi je Meditacija iz opere Thais. 
 
-Upravo tu skladbu sviram i na vjenčanjima dan danas. 
+A najdraži skladatelj? Dvorzak.
+
+S toga moja glazba zraži toplom sofisticiranošću i elegancijom.
+Živjeti glazbu za mene je kultura života.
+ 
+
+
 
 
 
