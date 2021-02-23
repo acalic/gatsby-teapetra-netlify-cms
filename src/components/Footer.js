@@ -21,7 +21,7 @@ const Footer = class extends React.Component {
               croatian/ worldwide/ artist at all
             </div>
             <div className="column social-icons">
-              <a title="instagram" href="https://instagram.com/odettekokeshi">
+              <a title="instagram" href="https://instagram.com/teapetrart">
                 <img
                   src={instagram}
                   alt="Instagram"
