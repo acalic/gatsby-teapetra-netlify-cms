@@ -8,7 +8,7 @@ featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v161683743
 tags:
   - "#ecofriendly #sustainablewedding #sustainableevents"
 ---
-**Sustainable wedding or event (**eng. Održivo vjenčanje ili događaj) trend je koji je u zemljama van lijepe naše odavno implementiran. Odnosi se na tri stupa održivosti: ekonomiju, ekologiju i društvo. U 2020. godini održiva vjenčanja isplivala su na površinu, a u 2021. postat će cilj onima čiji mindset diše s prirodom.
+**Sustainable wedding or event** (Održivo vjenčanje ili događaj) trend je koji je u zemljama van lijepe naše odavno implementiran. Odnosi se na tri stupa održivosti: ekonomiju, ekologiju i društvo. U 2020. godini održiva vjenčanja isplivala su na površinu, a u 2021. postat će cilj onima čiji mindset diše s prirodom.
 
 Ne možemo otrgnuti termin **eco- friendly** i **going green** koji su sinonimi za ovakav vid organizacije vjenčanja I događaja.
 
@@ -27,8 +27,6 @@ Stoje tu tri razloga koji su ti okidač za odabir održivog vjenčanja:
 3. **Inspirirati ćeš druge** 
 
 # Vaša svijest je vaš teritorij. Iskoristite sve prilike koje možete od dekoracije do glazbe. Budite kreativni i van okvira.
-
-
 
 Vaša,
 
