@@ -1,6 +1,6 @@
 ---
 templateKey: portfolio-post
-title: LIFESTYLE III
+title: SECTION III
 description: Svakodnevni život nam je na dlanu i vidimo ga tek kroz prste jedne ruke :)
 featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1617272518/7-_portofolio_ngrjsz.jpg
 galleryImages:
