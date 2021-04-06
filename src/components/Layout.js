@@ -11,7 +11,7 @@ import favicon32 from "../img/favicon-32x32.png"
 
 import { TinyButton as ScrollUpButton } from "react-scroll-up-button"; //Add this line Here
 
-const TemplateWrapper = ({ children, isHome, isPortfolioEnabled }) => {
+const TemplateWrapper = ({ children, isHome }) => {
   const { title, description } = useSiteMetadata()
 
   return (
@@ -52,7 +52,7 @@ const TemplateWrapper = ({ children, isHome, isPortfolioEnabled }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar isHome={isHome} isPortfolioEnabled={isPortfolioEnabled}/>
+      <Navbar isHome={isHome}/>
       <div>{children}</div>
       <Footer />
       <ScrollUpButton ContainerClassName="btn-scrolltop"/>

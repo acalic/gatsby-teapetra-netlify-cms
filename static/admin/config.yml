@@ -37,7 +37,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "index-page"}
           - {label: Title, name: title, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: "Show Portfolio menu", name: "portfolio_show", widget: "boolean", default: false}
           #- {label: Image, name: image, widget: image}
           - {label: Header carousel images, name: mainCarousel, widget: object, fields: 
               [
