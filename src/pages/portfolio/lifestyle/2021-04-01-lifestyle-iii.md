@@ -12,4 +12,9 @@ galleryImages:
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1617272518/5-_portofolio_riohqx.jpg
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1617272377/3-_portofolio_jrmute.jpg
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1617272415/2-portofolio_ybhesr.jpg
+  - - https://res.cloudinary.com/teapetradotcom/image/upload/v1618244490/Portfolio/Lifestyle%20-%20Section%203/4_mv0cdw.jpg
+    - https://res.cloudinary.com/teapetradotcom/image/upload/v1618244492/Portfolio/Lifestyle%20-%20Section%203/5_r1mbi0.jpg
+    - https://res.cloudinary.com/teapetradotcom/image/upload/v1618244490/Portfolio/Lifestyle%20-%20Section%203/3_hs7b9d.jpg
+    - https://res.cloudinary.com/teapetradotcom/image/upload/v1618244490/Portfolio/Lifestyle%20-%20Section%203/1_tpqack.jpg
+    - https://res.cloudinary.com/teapetradotcom/image/upload/v1618244490/Portfolio/Lifestyle%20-%20Section%203/2_lfidib.jpg
 ---
