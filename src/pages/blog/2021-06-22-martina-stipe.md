@@ -2,11 +2,11 @@
 templateKey: blog-post
 title: MARTINA & STIPE
 date: 2021-06-18T11:44:27.567Z
-description: >
-  DOJAM:
+description: >+
+  DOJAM MARTINA & STIPE:
 
   ,,Glazba u crkvi nam je bila predivna, stvorili ste predivan ugođaj i svima su proradile emocije. Nekima su čak i suze krenule na ulaznoj pjesmi Ti dižeš me. Hvala što ste naš poseban trenutak učinili posebnijim i apsolutno čarobnim!'' 
-                                                          MARTINA & STIPE
+                                                          
 postvisible: true
 featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v1624387959/3%20sekcija/_MG_2633_dyaeaw.jpg
 tags:
