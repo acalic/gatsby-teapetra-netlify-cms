@@ -12,7 +12,7 @@ featuredimage: https://res.cloudinary.com/teapetradotcom/image/upload/v162438795
 tags:
   - "#wedding #weddingmusic #trio"
 ---
-U ljeto 2021. napokon se vraćamo vjenčanjima. No, u malo drugačijem obliku. Forma vjenčanja zvana **elopement** vjenčanja (mala vjenčanja do 50 ljudi) meni su najdraža. Takvo je bilo i ovo koje smo održali u crkvi Presveto srce Isusovo u Splitu na Visokoj za Martinu i Stipu.
+U ljeto 2021. napokon se vraćamo vjenčanjima. No, u malo drugačijem obliku. Forma vjenčanja zvana **elopement** vjenčanja (mala vjenčanja do 50 ljudi) meni su najdraža. Takvo je bilo i ovo koje smo održali u crkvi Presveto Srce Isusovo u Splitu na Visokoj za Martinu i Stipu.
 
 Minimalan broj gostiju i religiozna atmosfera dopustili su nam stvoriti zvuk koji je odjeknuo prostorom crkve. Mekan i poletan ton držao nas je od samog početka. Želja nam je bila mladencima ostaviti trag glazbe koji će pamtiti u novom, zajedničkom životu.  
 
