@@ -23,4 +23,5 @@ galleryImages:
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1618248478/Portfolio/Lifestyle%20-%20Section%203/17_to0o82.jpg
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1618248479/Portfolio/Lifestyle%20-%20Section%203/18_ceybh5.jpg
     - https://res.cloudinary.com/teapetradotcom/image/upload/v1618248484/Portfolio/Lifestyle%20-%20Section%203/14_hjh07k.jpg
+  - https://res.cloudinary.com/teapetradotcom/image/upload/v1645893595/SEKCIJA%2026.2./3_rvfglh.jpg
 ---
