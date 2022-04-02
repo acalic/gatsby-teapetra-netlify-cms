@@ -41,14 +41,12 @@ const IndexPage = ({ data }) => {
   ];
 
   return (
-    <Layout isHome>
-      <IndexPageTemplate
-        title={frontmatter.title}
-        description={frontmatter.description}
-        mainCarousel={frontmatter.mainCarousel}
-        mainCarouselFormated={images}
-      />
-    </Layout>
+    <IndexPageTemplate
+      title={frontmatter.title}
+      description={frontmatter.description}
+      mainCarousel={frontmatter.mainCarousel}
+      mainCarouselFormated={images}
+    />
   );
 };
 
