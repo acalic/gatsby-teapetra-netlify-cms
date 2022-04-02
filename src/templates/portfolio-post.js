@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
-import ResponsiveGallery from '../components/ResponsiveGallery';
+import ResponsiveGallery from "../components/ResponsiveGallery";
 
 /* import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
@@ -49,7 +49,7 @@ export const PortfolioPostTemplate = ({
 
     photo.src = item;
     photo.thumbnail = item;
-    photo.caption = '';
+    photo.caption = "";
 
     photos.push(photo);
 
@@ -72,7 +72,6 @@ export const PortfolioPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1 portfolio-post-gallery">
-
             <h1 className="title has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -88,7 +87,6 @@ export const PortfolioPostTemplate = ({
             />
 
             <PostContent content={content} />
-
           </div>
         </div>
       </div>
@@ -101,7 +99,7 @@ PortfolioPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object
+  helmet: PropTypes.object,
 };
 
 const PortfolioPost = ({ data }) => {
@@ -123,7 +121,7 @@ const PortfolioPost = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
-        galleryImages={post.frontmatter.galleryImages}
+        //galleryImages={post.frontmatter.galleryImages}
       />
     </Layout>
   );
@@ -145,7 +143,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         description
-        galleryImages
       }
     }
   }
